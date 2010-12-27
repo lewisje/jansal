@@ -7,7 +7,7 @@ You may well know that you should have one VirusScanner on your computer (that a
 
 You should do what you can to block the most common vectors of malware to give your VirusScanner a break, to speed up your Web browsing, and incidentally to make Web pages appear cleaner; the measures explained in the remaining Wiki pages can be taken in any combination and they work in layers.
 
-I also intend to let you know what I have found to be more trouble than it's worth, especially if a particular passive-blocking method is too prone to false positives.
+I also intend to let you know what I have found to be more trouble than it's worth, especially if a particular passive-blocking method is too prone to FalsePositives.
 
 == A Note About Ad-Blocking and Malvertising ==
 
@@ -41,7 +41,7 @@ The only real security implications are that element hiding can be used to keep 
 
 = Comparison with Active Blocking =
 
-Filtering proxies like Polipo, Privoxy, and The Proxomitron are external programs that look at all network traffic and can do anything at all to it; they are a bit difficult to set up, prone to false positives, and demanding of system resources.
+Filtering proxies like Polipo, Privoxy, and The Proxomitron are external programs that look at all network traffic and can do anything at all to it; they are a bit difficult to set up, prone to FalsePositives, and demanding of system resources.
 
 Your own resident VirusScanner may come with a module to protect against malicious webpages, and so do the paid version of MalwareBytes' Anti-Malware (which is not a virus scanner) and the free BrowserGuard application by TrendMicro (specifically targeted at malicious Javascript in InternetExplorer, in lieu of an actual analogue to NoScript); they are external programs that slow down your computer a bit, and usage of them is questionable (I have personally noticed a couple FalsePostives in the WebsiteBlocking in MalwareBytes, like 7chan and Oron).
 
