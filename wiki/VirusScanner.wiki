@@ -1,4 +1,4 @@
-#summary A brief overview of virus scanners
+#summary A brief overview of virus-scanners, the last line of defense
 
 = The Last Line of Defense =
 Most of this wiki is about blocking common vectors of malware propagation, but you should have exactly one resident virus-scanner running on your computer (multiple scanners can interfere with each other), even if you are not using Windows; you should get one that also scans for other forms of malware, like rootkits, keyloggers, trojans, worms, and bots, and most of them do.
