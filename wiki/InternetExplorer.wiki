@@ -1,0 +1,31 @@
+#summary The much-maligned browser can still be shored up.
+#labels Featured
+
+= Introduction =
+Microsoft Internet Explorer is by far the most widely used Web browser in the world, mostly because it has been bundled with Windows, the most popular desktop and notebook operating system by an even greater margin, since 1998; it is also popular among Information Technology departments for its ability to be managed via Group Policy and Active Directory Administrative Templates (although tools are available for [http://sourceforge.net/projects/firefoxadm/ Firefox] on Windows, [http://www.opera.com/support/mastering/sysadmin/ Opera] on Windows and Linux, and [http://www.google.com/support/a/bin/answer.py?answer=187945 Chrome] on Windows, OS X, and Linux) and its legacy support for very old Intranet applications making use of ActiveX controls written back when versions 4 through 6 were the best browsers available for free and were much more dominant than IE is now.
+
+Unfortunately, ActiveX provides a massive attack vector, because the controls can be installed without even restarting the browser and have all of the privileges of the user, and in the old days they were commonly used in "browse and get owned" pages and still are used by some forms of malware, which install toolbars and other BHOs without the user's knowledge or consent; recent versions have enhanced the basic security of ActiveX, starting with the Add-Ons Manager and end to automatic ActiveX installation in IE6 SP2 and continuing with the SmartScreen Filter in IE8 and a feature in IE9 that prevents BHOs installed by external programs from automatically being enabled.
+
+Also, although Microsoft was once lax about security in its Web browser, it is now vigilant, with updated lists of ActiveX KillBits and security patches for all supported versions (IE6 SP3 and later) released on a regular basis, along with its own Malware Removal Tool and a VirusScanner (Microsoft Security Essentials) that integrates with Internet Explorer.
+
+= Recommendations =
+== Privacy ==
+Download the XML file from [http://www.privacychoice.org/trackerblock/ie Privacy Choice] and Import it from the Privacy tab in Internet Options to block most tracking cookies.
+
+== Killbits ==
+Although Microsoft releases its own list of ActiveX KillBits, you should add some more, to stop malware and annoyances from hooking into Internet Explorer, and even if you don't use IE for your daily Web browsing, many Windows applications use it internally, so you should keep IE secured and up-to-date.
+
+Use [http://www.safer-networking.org/en/spybotsd/index.html Spybot] with [http://jansal.googlecode.com/svn/trunk/adblock/SpybotTweaks.reg this set of Registry tweaks] and [http://www.spybotupdates.com/updates/files/temp/SDImmunize.zip this updated Immunization program], which should be placed in the Spybot program directory; Immunize everything except for the Domains and Secure Domains entries, which bloat the Restricted Sites zone and will be duplicated in the HostsFile anyway. Do keep immunizing IPs, because the HostsFile cannot block access to particular IP addresses; also, SpyBot will keep some cookies from being downloaded, but because the importation of the Privacy Choice list removes that immunization, you should do that step first. Immunization of PlugIns means adding the ActiveX KillBits.
+If you will be using my custom-compiled HostsFile, don't use SpyBot to immunize it; just download a [http://jansal.googlecode.com/svn/trunk/adblock/hosts fresh copy], which should be updated every Wednesday, when Patrick Michael Kolla (developer of SpyBot) updates the immunizations.
+Finally, don't use SpyBot for any purpose other than immunization: Its scanning engine is too slow and ineffective at capturing today's malware, and its TeaTimer and IE Protection modules are annoying and provide no real security.
+
+Use [http://www.javacoolsoftware.com/spywareblaster.html SpywareBlaster] with [http://koti.mbnet.fi/pattaya1/customblocking.txt this Custom Blocking List] and after updating, protect all items except for Restricted Sites, and then go to Tools and then Custom Blocking and protect all of those entries too; if you want you can also use this program to keep Flash from running in IE at all, and then your users won't get so much as a request to install Flash (which happens if your users do not have Flash installed and browse a site in IE that uses Flash), but I don't recommend such a drastic measure.
+
+== Ad-Blocking ==
+Use a special method I found to easily update your InPrivate filters in IE8+ and automatically enable InPrivate Filtering; I am currently evaluating the use of Simple AdBlock, because it works even in IE6 and uses a wider range of filters, but InPrivate is native to the browser and that is a nice thing.
+
+=== Element Hiding ===
+Simple AdBlock uses ElementHiding filters, but InPrivate Filtering does not; also do not attempt to use Fanboy's special CSS file made for OperaBrowser, even though IE supports user stylesheets, because IE's numerous deviations from Web standards lead to disastrous FalsePositives, like hiding the entire Facebook homepage.
+
+= Not Recommended ==
+IE7Pro is too bloated to recommend (it also fails to work in IE9 Beta) even though it does effectively prevent PlugIns from auto-launching, while Quero Toolbar is an admirable yet faulty attempt to provide script-blocking in IE; also remember that if a large number of sites are in any Zone (most commonly Restricted Sites), IE will take a long time to load, to keep only those sites that cannot be blocked altogether via the HostsFile, namely IP addresses.
