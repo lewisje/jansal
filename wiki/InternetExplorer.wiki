@@ -24,6 +24,8 @@ Use [http://www.javacoolsoftware.com/spywareblaster.html SpywareBlaster] with [h
 == Ad-Blocking ==
 Use a special method I found to easily update your InPrivate filters in IE8+ and automatically enable InPrivate Filtering; I am currently evaluating the use of Simple AdBlock, because it works even in IE6 and uses a wider range of filters, but InPrivate is native to the browser and that is a nice thing.
 
+You may also consider using [http://www.ghostery.com/ Ghostery], because it is the only reliable way to block at least some scripts, but its interface is significantly more difficult to use in IE than in the other browsers that it is supported with (FireFox, GoogleChrome, and AppleSafari), and its interference with the Google Maps widgets embedded in several websites can be considered a false positive.
+
 === Element Hiding ===
 Simple AdBlock uses ElementHiding filters, but InPrivate Filtering does not; also do not attempt to use Fanboy's special CSS file made for OperaBrowser, even though IE supports user stylesheets, because IE's numerous deviations from Web standards lead to disastrous FalsePositives, like hiding the entire Facebook homepage.
 
