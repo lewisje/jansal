@@ -15,7 +15,7 @@ Install [http://en.wikipedia.org/wiki/Windows_PowerShell PowerShell] if you do n
 Download [http://jansal.googlecode.com/svn/trunk/adblock/MakeFilter.zip my modified MakeFilters package] and extract its contents; then put the mf directory in the C:\ directory.
 
 Double-click the included .reg file to enable the filters in both IE8 and IE9; mode 2 (let me decide) is used instead of the originally-recommended mode 1 (automatically block) because mode 1 would pick up any content shared among multiple domains (the exact threshold is set by the user, between 3 and 30) and add it to the filter list, eventually breaking sites relying on such important frameworks as jQuery, Mootools, and YUI.
-Use mode 0 in case you no longer want the filtering to turn on by default.
+Use mode 0 with [http://jansal.googlecode.com/svn/trunk/adblock/DisableInPrivate.reg this .reg file] in case you no longer want the filtering to turn on by default.
 
 Double-click the shortcut "Make Filters (for Admin)" and wait a few minutes; the creation of the .reg file from the downloaded text file is the longest part.
 
