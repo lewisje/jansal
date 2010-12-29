@@ -13,6 +13,8 @@ Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in In
 
 I have not found an ad- or malware-blocking HostsFile other than Peter Lowe's without its share of false positives; MVPs, hpHosts, and Malware Domain List end up blocking such ordinary sites as Megaupload, Rapidshare, Filefactory, and even Sourceforge, which are sometimes used to upload malware but do not attempt to use vulnerabilities in browsers or PlugIns to send it to unwitting users. Also, an excessively large HostsFile will by itself slow down your Web browsing; the full hpHosts list by itself is too large, and no amount of optimization via Hosts Man will alleviate the excess.
 
+However, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] has numerous false positives as a PeerBlock list.
+
 Kingsoft is notorious for its high [https://docs.google.com/viewer?url=http://av-comparatives.org/images/stories/test/ondret/avc_od_aug2010.pdf rate of false positives], but all other vendors of virus-scanners have notable incidents; Microsoft Security Essentials has the lowest rate among free scanners, avast! also has a low rate, and you should ensure that your VirusScanner does not regularly mark core Windows system files as malicious.
 
 The old recommendation to have InPrivate Filtering automatically start in mode 1 (Automatic) rather than 2 (Let me decide) caused InternetExplorer to build up a slew of false positives after browsing enough domains that used such widespread and fundamental Javascript frameworks as jQuery, Mootools, and YUI, eventually breaking a large portion of the Web.
