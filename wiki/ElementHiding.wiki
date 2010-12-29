@@ -10,16 +10,16 @@ The [http://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-eleme
 Install Simple AdBlock; the element-hiding filters of Easy List will be used.
 
 == Mozilla Firefox ==
-Install AdBlock Plus; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet and rename it "userContent.css" and then place that in the chrome directory of your Firefox profile.
+Install AdBlock Plus; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet and rename it "userContent.css" and then place that in the chrome directory of your FireFox profile.
 
 == Opera ==
-Download Fanboy's stylesheet, place it anywhere (possibly in your Opera profile or your Opera program directory), and set the user stylesheet in [opera:config your configuration] to point there; additionally, after setting your userscript directory, you can place [http://arienh4.net/AdSweep.js the AdSweep script] there.
+Download Fanboy's stylesheet, place it anywhere (possibly in your OperaBrowser profile or your OperaBrowser program directory), and set the user stylesheet in [opera:config your configuration] to point there; additionally, after setting your userscript directory, you can place [http://arienh4.net/AdSweep.js the AdSweep script] there.
 
 == Safari ==
-Install AdBlock; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet, place it anywhere (possibly in your Safari profile or your Safari program directory), and set the user stylesheet in the Preferences menu to point there.
+Install AdBlock; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet, place it anywhere (possibly in your AppleSafari profile or your AppleSafari program directory), and set the user stylesheet in the Preferences menu to point there.
 
 == Chrome ==
-Install AdBlock; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet and rename it "Custom.css" and then place that in the appropriate directory of your Chrome profile.
+Install AdBlock; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet and rename it "Custom.css" and then place that in the appropriate directory of your GoogleChrome profile.
 
 == SRWare Iron ==
 Install AdBlock+ Element Hiding Helper; this supplements the built-in AdblockIni with the element-hiding filters from one AdBlock Plus list, preferably the combination of Easy List with the German supplement. Additionally, you may download Fanboy's stylesheet and rename it "Custom.css" and then place that in the appropriate directory of your Chromium profile (SRWare Iron uses the same profile as the Chromium nightly builds, so you can't run both of them at the same time).
