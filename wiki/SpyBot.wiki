@@ -1,0 +1,14 @@
+#summary It's not so good at Searching or Destroying, but it still has a place in Immunization.
+
+= History =
+Back in 2000, Patrick Michael Kolla was a college student eager to remove a couple annoying pieces of adware, and he wrote what would later become [https://secure.wikimedia.org/wikipedia/en/wiki/Spybot_%E2%80%93_Search_&_Destroy Spybot - Search & Destroy]; it became immensely popular as one of the first scanners for adware, spyware, and other malware that do not directly infect files as viruses do but still cause all manner of undesirable effects, and in particular it was highly recommended when I entered college in 2003. Its innovative Immunization engine used features provided by the browsers and the operating system to automatically protect against malicious websites, ActiveX controls, and tracking cookies.
+
+Unfortunately, the Spybot scanning engine is now the slowest of the bunch, it lags behind the competition in detecting the latest threats, and its TeaTimer module provides a great deal of annoyance (throwing up a prompt at the slightest Registry change) and hogs resources while providing little security; its only redeeming value, and the only reason I still use it after 2008, is its Immunization feature.
+
+= Recommendations =
+When installing Spybot, uncheck all four check marks, so that you will have no Desktop or Quick Launch shortcut, and TeaTimer and the IE plugin will not be activated.
+
+Next, read the InternetExplorer article; then, up to once per week, preferably on Wednesday mornings after Kolla releases his updates, run the Spybot updater and then run the improved Immunization tool from his long-delayed Spybot 2.0 release. Immunize all entries related to browsers other than InternetExplorer.
+
+= Not Recommended =
+Do not immunize Domains or Secure Domains in InternetExplorer, because bulking up the Restricted Sites zone slows down InternetExplorer, and all of those domains will also be put in the HostsFile to block them anyway; if using my special HostsFile, don't immunize that either. Finally, if using PeerBlock, don't immunize the IPs.
