@@ -69,4 +69,4 @@ Advantages of this method include that it works with all devices connected to th
 If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.0.254 to whatever you end up using.
 
 = Not Recommended =
-As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs and hpHosts are too large and full of FalsePositives.
+As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, and Malware Domain List are too large and full of FalsePositives.
