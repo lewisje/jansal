@@ -1,0 +1,33 @@
+#summary What cannot be blocked may still be hidden; although this enhances neither security nor browsing speed it still looks nice.
+
+= Introduction =
+Most browsers have long supported user stylesheets, and some users have used them to hide ads or other objectionable content; now most AdBlock implementations also support element-hiding rules, to hide content that cannot be blocked and to remove the white spaces that remain when content is blocked.
+
+The [http://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css best element-hiding stylesheet] still kept up-to-date is maintained by Fanboy for OperaBrowser, but it works well in all browsers except for InternetExplorer, because of its problematic support for standard CSS.
+
+= Recommendations =
+== Internet Explorer ==
+Install Simple AdBlock; the element-hiding filters of Easy List will be used.
+
+== Mozilla Firefox ==
+Install AdBlock Plus; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet and rename it "userContent.css" and then place that in the chrome directory of your Firefox profile.
+
+== Opera ==
+Download Fanboy's stylesheet, place it anywhere (possibly in your Opera profile or your Opera program directory), and set the user stylesheet in [opera:config your configuration] to point there; additionally, after setting your userscript directory, you can place [http://arienh4.net/AdSweep.js the AdSweep script] there.
+
+== Safari ==
+Install AdBlock; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet, place it anywhere (possibly in your Safari profile or your Safari program directory), and set the user stylesheet in the Preferences menu to point there.
+
+== Chrome ==
+Install AdBlock; the element-hiding filters in your lists will be used. Additionally, you may download Fanboy's stylesheet and rename it "Custom.css" and then place that in the appropriate directory of your Chrome profile.
+
+== SRWare Iron ==
+Install AdBlock+ Element Hiding Helper; this supplements the built-in AdblockIni with the element-hiding filters from one AdBlock Plus list, preferably the combination of Easy List with the German supplement. Additionally, you may download Fanboy's stylesheet and rename it "Custom.css" and then place that in the appropriate directory of your Chromium profile (SRWare Iron uses the same profile as the Chromium nightly builds, so you can't run both of them at the same time).
+
+== Konqueror and Other Minor Browsers ==
+Download Fanboy's stylesheet, place it anywhere (possibly in the profile or program directory), and set your user stylesheet to point there.
+
+= Not Recommended =
+Do not use Fanboy's stylesheet with InternetExplorer; its non-standard treatment of CSS leads to notable FalsePositives, including hiding the Facebook front page. If you find a custom ad-hiding stylesheet that works in InternetExplorer, try it and tell me about it.
+
+Also, if you use custom stylesheets for any other purpose (such as accessibility for people with poor vision), keep them and do not use Fanboy's stylesheet; element hiding aids neither security nor browsing speed, for it still allows content to be loaded, instead it just makes pages look nicer, but Fanboy's stylesheet will still render content in the typical non-accessible manner.
