@@ -18,8 +18,7 @@ First, use the built-in Spyware and Advertising lists, and then add these lists 
 
 [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits]
 
-[http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter 
-Lowe's Ad Servers]
+[http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers]
 
 [http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot]
 
