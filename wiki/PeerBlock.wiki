@@ -26,7 +26,7 @@ This last one was extracted by me from the immunization made by SpyBot.
 
 Next, go to the Settings menu, choose to log nothing, and turn off notifications.
 
-Then go to the next page and choose "Start with Windows" and "Always start hidden" under Startup, then "Check PeerBlock" and "Check Lists" and "Auto-update every 1 days" and "Auto-close update window after 0 seconds" and "Update at startup" under Updates, and then "Always hide tray icon" and "Minimize to tray on close" under Miscellaneous, and finally Save and exit the Settings menu; PeerBlock should be completely out of your way, blocking in the background, but if you want to interact with it again, just look for it in the Start Menu.
+Then go to the next page and choose "Start with Windows" and "Always start hidden" under Startup, then "Check Peerblock" and "Check Lists" and "Auto-update every 1 days" and "Auto-close update window after 0 seconds" and "Update at startup" under Updates, and then "Always hide tray icon" and "Minimize to tray on close" under Miscellaneous, and finally Save and exit the Settings menu; Peerblock should be completely out of your way, blocking in the background, but if you want to interact with it again, just look for it in the Start Menu.
 
 If you use Vista or later, follow these [http://www.peerblock.com/userguide/how_to_use/htu-useraccountcontrol steps to make PeerBlock start at logon], because the method it uses fails to work under User Account Control.
 
