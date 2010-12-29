@@ -6,7 +6,7 @@
 Just like using an ad- and malware-blocking HostsFile, this will also keep some malware that may make it onto your computer from working; it may be a bot trying to access a certain IP address used by a command-and-control server, and if that IP is blocked, you will not inadvertently help to send e-mail or forum spam. This program, and similar IP filters, are good not only for your computer but for the Internet as a whole.
 
 = Recommendations =
-First, use the built-in Spyware and Advertising lists, and then add these lists from Bluetack and Peter Lowe, all set to be updated daily:
+First, use the built-in Spyware and Advertising lists, and then add these lists from Bluetack, all set to be updated daily:
 
 [http://list.iblocklist.com/lists/bluetack/bad-peers Bad Peers]
 
@@ -17,8 +17,6 @@ First, use the built-in Spyware and Advertising lists, and then add these lists 
 [http://list.iblocklist.com/lists/bluetack/hijacked Spammers]
 
 [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits]
-
-[http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers]
 
 [http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot]
 
@@ -32,3 +30,5 @@ If you use Vista or later, follow these [http://www.peerblock.com/userguide/how_
 
 = Not Recommended =
 Basically, if I didn't list it, don't use it; in particular you should uncheck the P2P list and not use the Education list, unless you don't want to visit Apple (or use iTunes) or such websites as Harvard, MIT, or your _alma mater_.
+
+Also, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] appears to have some FalsePositives that the HostsFile version does not have, because some ad servers reside on the same IP addresses as legitimate sites.
