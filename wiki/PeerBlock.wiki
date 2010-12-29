@@ -7,13 +7,22 @@ Just like using an ad- and malware-blocking HostsFile, this will also keep some 
 
 = Recommendations =
 First, use the built-in Spyware and Advertising lists, and then add these lists from Bluetack and Peter Lowe, all set to be updated daily:
+
 [http://list.iblocklist.com/lists/bluetack/bad-peers Bad Peers]
+
 [http://list.iblocklist.com/lists/bluetack/dshield Malicious Hackers]
+
 [http://list.iblocklist.com/lists/bluetack/forum-spam Forum Spammers]
+
 [http://list.iblocklist.com/lists/bluetack/hijacked Spammers]
+
 [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits]
-[http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers]
+
+[http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter 
+Lowe's Ad Servers]
+
 [http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot]
+
 This last one was extracted by me from the immunization made by SpyBot.
 
 Next, go to the Settings menu, choose to log nothing, and turn off notifications.
