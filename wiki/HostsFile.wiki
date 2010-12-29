@@ -17,7 +17,7 @@ Then if you run a local ad-blocking proxy server (which I do not recommend, beca
 
 After that, if you are behind a router (and you should be, so that an attacker who knows your IP address will only be able to probe the router, rather than directly going for your computer), your router's DNS cache will be consulted.
 
-After that, the DNS servers for your ISP (or if you use OpenDNS instead, which I recommend, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
+After that, the DNS servers for your ISP (or if you use [http://www.opendns.com/ OpenDNS] or [http://www.clearclouddns.com/FAQ/ ClearCloud] instead, which I recommend, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
 
 If necessary, the queries can go all of the way up to the DNS root servers, a set of 13 servers virtualized over dozens of computers around the world, which hold the authoritative domain name information for every website on the Internet that has registered a domain name (not all do); this very rarely happens, and when it does, your ISP or alternative DNS provider quickly caches the result and uses it for a long time.
 
