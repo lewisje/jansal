@@ -26,6 +26,8 @@ Use a special method I found to easily update your InPrivate filters in IE8+ and
 
 You may also consider using [http://www.ghostery.com/ Ghostery], because it is the only reliable way to block at least some scripts, but its interface is significantly more difficult to use in IE than in the other browsers that it is supported with (FireFox, GoogleChrome, and AppleSafari), and its interference with the Google Maps widgets embedded in several websites can be considered a false positive.
 
+[http://free.antivirus.com/browser-guard/ TrendMicro BrowserGuard] claims to block malicious Javascript that exploits zero-day vulnerabilities, but it runs all of the time, even when IE is not in use, and its effectiveness is questionable; I use it, but maybe you might not want to, and it is also still in beta.
+
 === Element Hiding ===
 Simple AdBlock uses ElementHiding filters, but InPrivate Filtering does not; also do not attempt to use Fanboy's special CSS file made for OperaBrowser, even though IE supports user stylesheets, because IE's numerous deviations from Web standards lead to disastrous FalsePositives, like hiding the entire Facebook homepage.
 
