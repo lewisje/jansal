@@ -8,6 +8,8 @@ Unfortunately, the Spybot scanning engine is now the slowest of the bunch, it la
 = Recommendations =
 When installing Spybot, uncheck all four check marks, so that you will have no Desktop or Quick Launch shortcut, and Tea Timer and the IE plugin will not be activated.
 
+If you use OperaBrowser, be sure to place an empty file called Opera6.ini in the place where the UrlFilter will be, because Spybot looks for this file when determining what to immunize; this was once used by OperaBrowser to store its preferences, but now a different file is used, yet Spybot was last updated so long ago that it doesn't know this.
+
 Next, read the InternetExplorer article; then, up to once per week, preferably on Wednesday mornings after Kolla releases his updates, run the Spybot updater and then run the improved Immunization tool from his long-delayed Spybot 2.0 release. Immunize all entries related to browsers other than InternetExplorer.
 
 = Not Recommended =
