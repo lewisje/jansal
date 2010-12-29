@@ -4,7 +4,7 @@
 = Adblock: Content-Filtering Extensions =
 Ever since the early days of Mozilla Phoenix (which would be renamed Firebird and then FireFox), there has been [http://forums.mozillazine.org/viewtopic.php?t=3829 at least one extension] marketed as an ad-blocker, such as Adblock; at first they could only hide downloaded content via ElementHiding, but around 2006, Wladimir Palant, from Germany, released a new version of the Adblock Plus fork that actually kept content from being downloaded by monitoring HTTP requests and blocking those that matched a filter in a blocklist and no filters in a whitelist.
 
-The idea behind Adblock Plus was used as well as practicable in some minor browsers, like Konqueror and QTWeb, and as GoogleChrome and AppleSafari developed their own extension systems, ad-blocking extensions came to be the most popular offerings, just as on FireFox; even InternetExplorer is starting to benefit, with SimpleAdblock, but Opera went its own way, with a UrlFilter list that must be modified manually (not programmatically via an extension) and can only be changed when the browser is closed or via its own "Block Content" interface (the SRWareIron fork of GoogleChrome used a more limited idea called AdblockINI that cannot be updated at all while the browser is running; at first it was the only way to block content in any Chromium-based browser and is still the only reliable way to do so).
+The idea behind Adblock Plus was used as well as practicable in some minor browsers, like Konqueror and QTWeb, and as GoogleChrome and AppleSafari developed their own extension systems, ad-blocking extensions came to be the most popular offerings, just as on FireFox; even InternetExplorer is starting to benefit, with SimpleAdblock, but Opera went its own way, with a UrlFilter list that must be modified manually (not programmatically via an extension) and can only be changed when the browser is closed or via its own "Block Content" interface (the SRWare Iron fork of GoogleChrome used a more limited idea called AdblockIni that cannot be updated at all while the browser is running; at first it was the only way to block content in any Chromium-based browser and is still the only reliable way to do so).
 
 Although marketed to keep ads from annoying users, these extensions also allow for faster browsing with less cache usage (because content is not downloaded) and greater PassiveSecurity by blocking most vectors of malvertising (and if the right filter lists are chosen, some URLs primarily used for malware distribution).
 
@@ -27,7 +27,7 @@ There once were some cumbersome programs for the OS X version of AppleSafari, bu
 No suitable extension currently exists; the most popular OperaBrowser extension right now does not even work, and no extension can modify the core of its content-filtering: the UrlFilter file.
 
 == SRWare Iron (3+) ==
-[https://chrome.google.com/extensions/detail/chmimgmjdabgiilljdjfbonifbhiglao Adblock+ Element Hiding Helper], which uses only the ElementHiding rules and works in concert with AdblockINI, may clear some of the empty spaces left behind when content is blocked.
+[https://chrome.google.com/extensions/detail/chmimgmjdabgiilljdjfbonifbhiglao Adblock+ Element Hiding Helper], which uses only the ElementHiding rules and works in concert with AdblockIni, may clear some of the empty spaces left behind when content is blocked.
 
 = Recommended Filter Lists =
 == General/Privacy ==
@@ -56,4 +56,4 @@ The [https://adversity.googlecode.com/hg/Antisocial.txt Adversity Antisocial] li
 Note that this list does not block the main pages of these sites, so Facebook, Twitter, and other services will continue to work; subscriptions likely exist, and filters can be created, to block most social-networking sites, but the intention behind this whole project is to enhance security _without_ keeping you from doing what you want to do, even if that includes social networking when you are supposed to be at work.
 
 = Not Recommended =
-Basically, if I didn't list it, you shouldn't use it; in particular Fanboy's list is not optimized for the Adblock Plus engine and definitely should not be used in combination with the recommended list, although it is also maintained for OperaBrowser and SRWareIron and forms the basis of my recommended filter lists for those browsers.
+Basically, if I didn't list it, you shouldn't use it; in particular Fanboy's list is not optimized for the Adblock Plus engine and definitely should not be used in combination with the recommended list, although it is also maintained for OperaBrowser and SRWare Iron and forms the basis of my recommended filter lists for those browsers.
