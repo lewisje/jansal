@@ -15,7 +15,7 @@ In the Appearance tab, choose the icon, but not the label.
 
 In the Notifications tab, uncheck "Show message about blocked scripts" and "Display the release notes on updates" and also uncheck "Audio feedback when scripts are blocked" if not already unchecked.
 
-Under Advanced, go to Untrusted and forbid <a ping...>, Web bugs, META redirections inside <NOSCRIPT> elements, and XSLT; go to Trusted and allow everything. Check all options under XSS, JAR, ABE, and External Filters ([http://blitzableiter.recurity.com/ Blitzableiter] is an excellent resource), and then under HTTPS, choose "Never" under Behavior and check the box under Cookies.
+Under Advanced, go to Untrusted and forbid <a ping...>, Web bugs, META redirections inside NOSCRIPT elements, and XSLT; go to Trusted and allow everything. Check all options under XSS, JAR, ABE, and External Filters ([http://blitzableiter.recurity.com/ Blitzableiter] is an excellent resource), and then under HTTPS, choose "Never" under Behavior and check the box under Cookies.
 
 Now, to enable or disable scripts on a site or mark a site as Untrusted, mouse over or click (with either button) the S icon; if it has a big NO symbol, all scripts are blocked; if a small one, some scripts; if an orange puzzle piece, some PlugIns; if a small exclamation mark, nothing blocked on that page and all scripts allowed by default; if just a blue S, nothing is blocked; if a white S without the white background, content has yet to be loaded.
 
