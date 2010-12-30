@@ -1,0 +1,30 @@
+#summary Google's new browser has already eclipsed Safari and Opera in popularity and it set to supplant Firefox as the base for many a custom browser; find out how to harden it.
+
+= History =
+In 2008, Google released a browser intended to be as standards-compliant as AppleSafari (based on the same HTML engine, Webkit) and both faster (with the new V8 engine) and more secure (with separate, sandboxed processes for the tabs and PlugIns), Chrome, based on an open-source project called Chromium; it quickly became a hit among the digerati and has accelerated in popularity among the general public, and now there are interesting Chromium derivatives like Flock (formerly a FireFox derivative), Rockmelt (a competitor to Flock), and SRWare Iron (for the privacy-sensitive among us, also the first Chromium derivative to include an effective implementation of AdBlock, known as AdblockIni, still the only perfectly effective implementation in any Chromium derivative).
+
+Its fast startup makes Chrome (or recently, SRWare Iron) ideal as the default browser; if some external program launches a URL, often without your consent, you want to get it away quickly without waiting for things like reloading a session, and setting a quick-loading browser as the default allows you to do that (as long as it's not also the browser you do most of your actual Web browsing with).
+
+Unfortunately, until the emergence of experimental extension support in version 4 (Google goes through version numbers quickly) and full support in version 5, there was no compelling reason to use Chrome on a regular basis; after at least partial content-blocking was enabled in version 6 due to an update to Webkit, Chrome became a viable option for secure Web browsing (AdBlock for Chrome had existed before then but merely used ElementHiding, and it still does where content cannot be blocked).
+
+Google maintains 5 different release channels for its browser; by default you get the Stable version (currently 8, but 9 will arrive soon), but you can instead join the Beta channel (currently 9) or the Dev channel (currently 10). If on any of those channels, a Windows user can also install Chrome Canary, a secondary installation even more bleeding-edge than Dev that uses its own separate profile and cannot be set as the default browser. 
+
+Finally, the most adventurous testers can install nightly builds of Chromium, which do not auto-update or include the bundled Flash PlugIns or MP4 video decoder and cannot be run simultaneously with SRWare Iron, because they use the same profile.
+
+All Chromium derivatives except for Chromium itself and SRWare Iron auto-update without even notifying the user (Chrome for Linux uses the system's package manager), and their unique architecture allows for all of the relevant files to be put into place even while the browser is running, to be executed instead of the old program files upon restart (most browsers must be shut down first, and AppleSafari on OS X and InternetExplorer even require rebooting upon updates because of their integration into the OS); unfortunately the "Google Update" or "Flock Update" PlugIns will show up even in browsers like FireFox and OperaBrowser that make no use of them, but they appear to be harmless.
+
+= Recommendations =
+If not using SRWare Iron, install AdBlock (from Michael Gundlach) and follow the Recommendations (if using SRWare Iron, use AdblockIni and install AdBlock+ ElementHiding Helper); also enable click-to-play in about:flags and install Ghostery (Notscripts can also be useful but is a pain to configure and nowhere near as flexible as NoScript).
+
+Additionally, install Vanilla, which clears after 30 minutes all cookies not whitelisted, Link Peelr, which shows what hides behind those URL shorteners, and if on Windows, especially XP, Chrome IE Tab Multi, so that you can run Web applications requiring the InternetExplorer engine (like Microsoft Update) without launching InternetExplorer itself.
+
+Consider installing VTChromizer, so that you can upload suspicious files to Virus Total, and Better Popup Blocker, which does have some notable FalsePositives with respect to framed content in Hotmail and other Webmail clients that can be overcome with vigilance.
+
+Finally, consider allowing every single extension to run in Incognito mode, so that you are protected from malicious and annoying advertising even while trying to hide your porn browsing from relatives.
+
+= Not Recommended =
+KB SSL Enforcer too frequently leads to problems with sites that do not work properly when re-directed to HTTPS, even if they do not blacklist themselves; the effort required to manually blacklist each site is too great to recommend, requiring frequent trips to the Extensions menu (as opposed to the more easily accessible interfaces of Vanilla, Not Scripts, Better Popup Blocker, and Ghostery).
+
+Flashblock (from ruzanow, not josorek) was once recommended, but now that click-to-play is accessible via about:flags since version 8, it has been utterly supplanted; unlike in OperaBrowser, the native ability to block PlugIns in Chrome works perfectly, even better than Flashblock.
+
+Adthwart was faster than AdBlock but the means by which it is faster lead to less effective blocking and more reliance on ElementHiding; its successor, AdBlock Plus, is still in beta and both slower and less effective than AdBlock, but if it improves sufficiently, the project started by Tom Joseph and continued by Wladimir Palant may be recommended again.
