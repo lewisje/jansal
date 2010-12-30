@@ -1,0 +1,15 @@
+#summary With its new-found extensions, Apple's flagship browser can be hardened against malicious or hijacked websites.
+
+= History =
+To replace a special version of InternetExplorer that Apple agreed to pre-install on all new Macs from 1998 to 2003, the KHTML and KJS engines behind the KDE Web browser Konqueror were forked into the Webkit project, from which an innovative browser, Safari, was made; this browser came to be pre-installed on all Macs from 2003 onward, and now its libraries are as integral to OS X as InternetExplorer components are to Windows.
+
+In 2005 Apple made all of Webkit open-source (previously only Webcore and Javascript Core, the components forked respectively from KHTML and KJS, had been open-source), in 2007 Apple released Safari for Windows, and in 2008 Webkit (now available for Windows) was used as the backend for the Adobe Creative Suite (which had previously picked Presto from OperaBrowser for its standards-compliance) and its Webcore component was used by Google for GoogleChrome (Google chose V8 instead of Squirrelfish, which had by then replaced Javascript Core). Webkit is famous for consistently leading all other rendering engines in compliance with standards both existing (like HTML4.01 and CSS2.1) and emerging (like HTML5 and CSS3), and it frequently outpaces the engines of FireFox and InternetExplorer in Javascript speed (although IE9 may change this).
+
+However, until the release of Safari 5 in 2010, there was no compelling reason to choose the browser on Windows; for OS X it was required, and there were some clunky extensions for things like blocking Flash from auto-loading, but on Windows there was nothing of the sort, and version 3 was not even all that fast to load and appeared garish, for it retained the Brushed Metal look and did not conform to Microsoft user-interface guidelines at all.
+
+Now that extensions are available, the browser comes highly recommended; in particular, its ability to block content is comparable to FireFox, and for some reason Chromium, the open-source project behind GoogleChrome, is inferior in this respect. Also, a way to block the auto-launching of PlugIns appeared for Safari 5 before appearing in GoogleChrome, and even then it was not until Google built it in and made it available in about:flags.
+
+= Recommendations =
+If in an environment supporting only versions of Safari before 5 (Tiger or earlier versions of OS X), at least get [http://clicktoflash.com/ ClickToFlash].
+
+Otherwise, install AdBlock and follow the Recommendations, and install [http://combsconnections.tk/extensions/ Plugin Blocker]; unfortunately there is no good analogue for NoScript except with respect to blocking of PlugIns.
