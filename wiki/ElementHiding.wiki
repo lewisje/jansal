@@ -3,7 +3,7 @@
 = Introduction =
 Most browsers have long supported user stylesheets, and some users have used them to hide ads or other objectionable content; now most AdBlock implementations also support element-hiding rules, to hide content that cannot be blocked and to remove the white spaces that remain when content is blocked.
 
-The [http://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css best element-hiding stylesheet] still kept up-to-date is maintained by Fanboy for OperaBrowser, but it works well in all browsers except for InternetExplorer, because of its problematic support for standard CSS; for this browser, use [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css this stylesheet] based on the now-outdated [http://userstyles.org/styles/299 FiltersetP] by Paulfox, which has not been updated for more than 2 years.
+The [https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css best element-hiding stylesheet] still kept up-to-date is maintained by Fanboy for OperaBrowser, but it works well in all browsers except for InternetExplorer, because of its problematic support for standard CSS; for this browser, use [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css this stylesheet] based on the now-outdated [http://userstyles.org/styles/299 FiltersetP] by Paulfox, which has not been updated for more than 2 years.
 
 = Recommendations =
 == Internet Explorer ==
