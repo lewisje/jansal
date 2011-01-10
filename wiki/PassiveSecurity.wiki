@@ -25,7 +25,7 @@ It may be a bit annoying to train NoScript to only allow the scripts you want, o
 
 == ActiveX Killbits ==
 
-KillBits are Registry entries that let MicrosoftWindows know that certain ActiveX controls should not be installed, or if installed, should not be run; Microsoft provides its own list, and SpyBot and SpywareBlaster provide plenty more. This measure is mostly effective after malware makes it onto your system, to mitigate its effect; however it should be deployed _before_ infection. KillBits affect InternetExplorer, Microsoft Office, Windows Media Player, and any other Microsoft product that makes use of ActiveX controls.
+KillBits are Registry entries that let Microsoft Windows know that certain ActiveX controls should not be installed, or if installed, should not be run; Microsoft provides its own list, and SpyBot and SpywareBlaster provide plenty more. This measure is mostly effective after malware makes it onto your system, to mitigate its effect; however it should be deployed _before_ infection. KillBits affect InternetExplorer, Microsoft Office, Windows Media Player, and any other Microsoft product that makes use of ActiveX controls.
 
 == DNS Trickery ==
 
