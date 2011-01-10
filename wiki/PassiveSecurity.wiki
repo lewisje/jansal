@@ -35,7 +35,7 @@ As an additional layer of security, use an alternate DNS provider either in your
 
 == Hiding Elements and Blocking Tracking Cookies ==
 
-The AdBlock-style extensions for FireFox, GoogleChrome, and AppleSafari support element-hiding rules in their filter lists, while all major browsers support a custom user stylesheet (commonly intended for accessibility reasons), which can be used to hide elements and collapse the gaps left behind when third-party advertising is blocked; unfortunately [https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css the most-recommended stylesheet] doesn't work well in Internet Explorer, for which [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css this stylesheet] should be used.
+The AdBlock-style extensions for FireFox, GoogleChrome, and AppleSafari support ElementHiding rules in their filter lists, while all major browsers support a custom user stylesheet (commonly intended for accessibility reasons), which can be used to hide elements and collapse the gaps left behind when third-party advertising is blocked; unfortunately [https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css the most-recommended stylesheet] doesn't work well in Internet Explorer, for which [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css this stylesheet] should be used.
 
 Also, SpyBot blocks some of the more undesirable cookies in OperaBrowser, FireFox, and InternetExplorer, while SpywareBlaster blocks a lot more (but not in OperaBrowser), and Privacy Choice even offers a list that can be directly imported into InternetExplorer.
 
