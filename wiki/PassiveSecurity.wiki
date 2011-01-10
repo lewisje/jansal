@@ -31,6 +31,8 @@ KillBits are Registry entries that let MicrosoftWindows know that certain Active
 
 On the easy side, you can use a large ad- and malware-blocking HostsFile; on the hard side, you can use a small one in combination with your router's DNS system to make the blocking more effective, broader, and faster. Then on the flip side, you can use a program like PeerBlock to directly block lists of IP addresses, which cannot be blocked via a HostsFile or the combination of your router's dnsmasq program and pixelserv.
 
+As an additional layer of security, use an alternate DNS provider either in your router or (if you do not use one or cannot set its DNS settings) on your computer; I recommend the top 5 listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], and you should use Clearcloud, Norton, Comodo, Open DNS, and Google, in that order (the Advanced settings of Windows DNS settings will let you put in all 10 IP addresses).
+
 == Hiding Elements and Blocking Tracking Cookies ==
 
 The AdBlock-style extensions for FireFox, GoogleChrome, and AppleSafari support element-hiding rules in their filter lists, while all major browsers support a custom user stylesheet (commonly intended for accessibility reasons), which can be used to hide elements and collapse the gaps left behind when third-party advertising is blocked; unfortunately this doesn't work well in Internet Explorer.
