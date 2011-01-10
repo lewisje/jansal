@@ -28,6 +28,6 @@ Install AdBlock+ Element Hiding Helper; this supplements the built-in AdblockIni
 Download Fanboy's stylesheet, place it anywhere (possibly in the profile or program directory), and set your user stylesheet to point there.
 
 = Not Recommended =
-Do not use Fanboy's stylesheet with InternetExplorer; its non-standard treatment of CSS leads to notable FalsePositives, including hiding the Facebook front page. If you find a custom ad-hiding stylesheet that works in InternetExplorer, try it and tell me about it.
+Do not use Fanboy's stylesheet with InternetExplorer; its non-standard treatment of CSS leads to notable FalsePositives, including hiding the Facebook front page.
 
-Also, if you use custom stylesheets for any other purpose (such as accessibility for people with poor vision), keep them and do not use Fanboy's stylesheet; element hiding aids neither security nor browsing speed, for it still allows content to be loaded, instead it just makes pages look nicer, but Fanboy's stylesheet will still render content in the typical non-accessible manner.
+Also, if you use custom stylesheets for any other purpose (such as accessibility for people with poor vision), keep them and do not use either stylesheet mentioned here; element hiding aids neither security nor browsing speed, for it still allows content to be loaded, instead it just makes pages look nicer, but my recommended stylesheets will still render content in the typical non-accessible manner.
