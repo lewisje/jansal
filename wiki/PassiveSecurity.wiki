@@ -31,7 +31,7 @@ KillBits are Registry entries that let Microsoft Windows know that certain Activ
 
 On the easy side, you can use a large ad- and malware-blocking HostsFile; on the hard side, you can use a small one in combination with your router's DNS system to make the blocking more effective, broader, and faster. Then on the flip side, you can use a program like PeerBlock to directly block lists of IP addresses, which cannot be blocked via a HostsFile or the combination of your router's dnsmasq program and pixelserv.
 
-As an additional layer of security, use an alternate DNS provider either in your router or (if you do not use one or cannot set its DNS settings) on your computer; I recommend the top 5 listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], and you should use Clearcloud, Comodo, Norton, Open DNS, and Google, in that order (the Advanced settings of Windows DNS settings will let you put in all 10 IP addresses).
+As an additional layer of security, use an alternate DNS provider either in your router or (if you do not use one or cannot set its DNS settings) on your computer; I recommend the top 6 listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], and you should use Clearcloud, Comodo, Norton, DNS Advantage, Open DNS, and Google, in that order (the Advanced settings of Windows DNS settings will let you put in all 12 IP addresses).
 
 == Hiding Elements and Blocking Tracking Cookies ==
 
