@@ -21,7 +21,7 @@ An important limitation of Chrome itself is that extensions cannot modify plugin
 There once were some cumbersome programs for the OS X version of AppleSafari, but they are no longer supported now that version 5 supports proper extensions; users of OS X Tiger and earlier (which do not support version 5) should search for sites that offer old software while they consider upgrading, possibly at substantial cost.
 
 == Internet Explorer (6+) ==
-[http://simple-adblock.com/ Simple Adblock], which comes with hard-coded subscriptions and a limited ability to add filters manually to a particular text file; unlike InPrivate Filtering, this works on IE6 and IE7 too, and it also allows for ElementHiding
+[http://simple-adblock.com/ Simple Adblock], which comes with hard-coded subscriptions and a limited ability to add filters manually to a particular text file; unlike InPrivate Filtering, this works on IE6 and IE7 too, and it also allows for ElementHiding.
 
 == Opera (11+) ==
 No suitable extension currently exists; the most popular OperaBrowser extension right now does not even work, and no extension can modify the core of its content-filtering: the UrlFilter file.
