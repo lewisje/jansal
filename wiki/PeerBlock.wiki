@@ -9,19 +9,12 @@ Notably, although it is possible to [http://www.ohmpie.com/stopphoninghome/ use 
 
 = Recommendations =
 First, use the built-in Spyware and Advertising lists, and then add these lists from Bluetack, all set to be updated daily:
-
-[http://list.iblocklist.com/lists/bluetack/bad-peers Bad Peers]
-
-[http://list.iblocklist.com/lists/bluetack/dshield Malicious Hackers]
-
-[http://list.iblocklist.com/lists/bluetack/forum-spam Forum Spammers]
-
-[http://list.iblocklist.com/lists/bluetack/hijacked Spammers]
-
-[http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits]
-
-[http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot]
-
+  * [http://list.iblocklist.com/lists/bluetack/bad-peers Bad Peers]
+  * [http://list.iblocklist.com/lists/bluetack/dshield Malicious Hackers]
+  * [http://list.iblocklist.com/lists/bluetack/forum-spam Forum Spammers]
+  * [http://list.iblocklist.com/lists/bluetack/hijacked Spammers]
+  * [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits]
+  * [http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot]
 This last one was extracted by me from the immunization made by SpyBot.
 
 Next, go to the Settings menu, choose to log nothing, and turn off notifications.
