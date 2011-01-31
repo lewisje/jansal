@@ -39,3 +39,5 @@ IE7Pro is too bloated to recommend (it also fails to work in IE9 Beta) even thou
 Simple AdBlock suffers from occasional FalsePositives and now costs $29.95 for the fully functional version.
 
 The Privacy Choice list for [http://www.privacychoice.org/trackerblock/all_companies All Companies] has some particularly nasty FalsePositives, keeping people from logging into e-mail accounts at well-known advertisers AOL and Yahoo!
+
+Do not clear your History unless you also wish to clear the list of sites you have set to use Compatibility View.
