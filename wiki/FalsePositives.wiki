@@ -11,6 +11,12 @@ This wiki instead advocates avoiding false positives, by blocking the most commo
 = Notable Techniques with Excessive False Positives =
 Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in InternetExplorer, ends up hiding the Facebook homepage because of the variance from Web standards in its layout engine.
 
+Also, both Simple AdBlock (which has since started charging money) and the method to automate InPrivate Filtering lists suffer from notable false positives and so are no longer recommended.
+
+Additionally, [http://www.privacychoice.org/trackerblock/all_companies the more aggressive list] from Privacy Choice suffers from severe false positives, keeping people from logging into AOL or Yahoo!
+
+Like the unintelligent conversion of Easy List to InPrivate Filtering format but worse, the unintelligent conversion of the recommended UrlFilter from OperaBrowser into AdblockIni format for SRWare Iron suffers from false positives so terrible that they keep the browser from starting up.
+
 I have not found an ad- or malware-blocking HostsFile other than Peter Lowe's without its share of false positives; MVPs, hpHosts, and Malware Domain List end up blocking such ordinary sites as Megaupload, Rapidshare, Filefactory, and even Sourceforge, which are sometimes used to upload malware but do not attempt to use vulnerabilities in browsers or PlugIns to send it to unwitting users. Also, an excessively large HostsFile will by itself slow down your Web browsing; the full hpHosts list by itself is too large, and no amount of optimization via Hosts Man will alleviate the excess.
 
 However, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] has numerous false positives as a PeerBlock list.
