@@ -1,0 +1,17 @@
+#summary The most secure browser by default, with the most features by default, is sadly harder to maintain added security for.
+
+= The Most Innovative Web Browser on Earth =
+Opera is my personal favorite: Even with built-in Bit Torrent, IRC, USENET, and e-mail clients (hence the name Opera _Internet_ Browser, not merely for browsing the Web) and Greasemonkey-style Userscript support, along with a fun-filled widget engine and unparalleled customization via .ini files for its skin, menus, toolbars, and nearly all other aspects of operation, even before extensions were available, it managed to be extraordinarily gentle on memory usage. More importantly, the browser itself has by far the lowest incidence and severity of public security vulnerabilities of all modern-day Web browsers, although this is less important than it sounds because most attacks these days target the PlugIns rather than the browser itself.
+
+Opera has also been innovative in the use of a special browser script to work around websites that don't quite work in Opera or (more rarely now) even try to shut it out, in the adoption of Web standards (although AppleSafari and GoogleChrome are stealing some of its thunder), and since version 9 in 2006 (a few months after version 8.5 was the first to be released for free and free of ads) in the use of a content-blocking mechanism, UrlFilter, basically built-in AdBlock! (Unfortunately UrlFilter cannot be updated via subscription.)
+
+Now that Opera has Unite and Extensions, its memory usage has gotten worse, but some extensions bring functionality that has long been desired, while others duplicate long-existing Userscripts but bring with them the ability to auto-update, which Userscripts cannot do.
+
+= Recommendations =
+Make a Userscript directory (Opera does not set one by default); try putting it inside your program directory or your profile.
+Then go to http://jansal.net/opera/ and put all of the scripts from the salr directory in your Userscript directory (the name came about because the first Userscripts I ever used were based on a now-obsolete port of the Something Awful Last Read extension for FireFox), especially allblock.js, which reliably blocks all PlugIns, except on secure (HTTPS) websites, where Userscripts do not work unless a certain setting is set that causes a certain warning message to appear that never stops appearing; in addition you should set the Enable On Demand Plugin setting, which usually blocks PlugIns, even on secure pages, except that it doesn't appear to block Java from annoyingly auto-loading, and PDF links in HTTPS sites will still launch your PDF Plugin, so it's not quite as good as Click-to-play in GoogleChrome or the blocker for PlugIns in FireFox.
+
+Also, download [https://jansal.googlecode.com/svn/trunk/adblock/urlfilter.ini my special urlfilter.ini] and put it somewhere, then make a blank file called "opera6.ini" (so that SpyBot can detect it) and go into your Preferences to make Opera know where to find its UrlFilter.
+This UrlFilter is a combination of what [https://secure.fanboy.co.nz/ Fanboy does] and the immunizations that SpyBot has made ever since Opera introduced UrlFilter in version 9.
+
+= Extensions =
