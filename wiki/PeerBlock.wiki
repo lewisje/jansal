@@ -8,7 +8,7 @@ Just like using an ad- and malware-blocking HostsFile, this will also keep some 
 Notably, although it is possible to [http://www.ohmpie.com/stopphoninghome/ use the route command] to block particular IP addresses or [http://www.malware-control.com/community-resources/free-delayed-version/ a professionally-maintained blacklist] (with [http://www.malware-control.com/en/safe-network-scan/?test a wonderful security scan] to promote it), they are rather bothersome for mass-blocking, especially use of the route command, and Peer Block is generally the way to go.
 
 = Recommendations =
-First, use the built-in Spyware and Advertising lists, and then add these lists from Bluetack, all set to be updated daily:
+First, use the built-in Advertising list, and then add these lists from Bluetack, all set to be updated daily:
   * [http://list.iblocklist.com/lists/bluetack/bad-peers Bad Peers]
   * [http://list.iblocklist.com/lists/bluetack/dshield Malicious Hackers]
   * [http://list.iblocklist.com/lists/bluetack/forum-spam Forum Spammers]
