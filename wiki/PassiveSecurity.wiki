@@ -45,7 +45,7 @@ The only real security implications are that element hiding can be used to keep 
 
 Filtering proxies like Polipo, Privoxy, and The Proxomitron are external programs that look at all network traffic and can do anything at all to it; they are a bit difficult to set up, prone to FalsePositives, and demanding of system resources.
 
-Your own resident VirusScanner may come with a module to protect against malicious webpages, and so do the paid version of MalwareBytes' Anti-Malware (which is not a virus scanner) and the free Browser Guard application by Trend Micro (specifically targeted at malicious Javascript in InternetExplorer, in lieu of an actual analogue to NoScript); they are external programs that slow down your computer a bit, and usage of them is questionable (I have personally noticed a couple FalsePostives in the Website Blocking in Malwarebytes, like 7chan and Oron).
+Your own resident VirusScanner may come with a module to protect against malicious webpages, and so do the paid version of Malwarebytes' Anti-Malware (which is not a virus scanner) and the free Browser Guard application by Trend Micro (specifically targeted at malicious Javascript in InternetExplorer, in lieu of an actual analogue to NoScript); they are external programs that slow down your computer a bit, and usage of them is questionable (I have personally noticed a couple FalsePositives in the Website Blocking in Malwarebytes, like 7chan and Oron).
 
 Applications that merely update blocking lists are not regarded as "active" even though they may run on an automatic basis; for this reason I do not think of PeerBlock or Hosts Man as active-blocking applications, and SpyBot, if configured properly, is also completely passive.
 
