@@ -36,7 +36,7 @@ As you will see, this browser may be the best, but it's not the easiest to handl
 
 Finally, both Virus Total and WOT now make extensions for Opera; use them to respectively send suspicious files to be tested for malware and to get a quick check on the reputation of a website, but they aren't quite as recommended as the previous three extensions.
 
-For enhanced usability, consider Binfix (so you're less likely to get gibberish filling your screen when you meant to _download_ that RAR file), Gcache (easy access to the Google Cache), Wayback Machine, Mini Wikipedia, Mini Wolfram Alpha, Translator (similar to the built-in functionality in GoogleChrome) Youtube Downloader, Opera Internal Pages, and Opera Configurator (easy access to your Preferences, without needing to leave your current tab).
+For enhanced usability, consider Gmail Compose (so you use Gmail rather than launching an external client, or Opera's built-in client if you don't use it, on clicking mailto: links) Binfix (so you're less likely to get gibberish filling your screen when you meant to _download_ that RAR file), Gcache (easy access to the Google Cache), Wayback Machine, Mini Wikipedia, Mini Wolfram Alpha, Translator (similar to the built-in functionality in GoogleChrome) Youtube Downloader, Opera Internal Pages, and Opera Configurator (easy access to your Preferences, without needing to leave your current tab).
 
 = Not Recommended =
 Do not use any extension that claims to block or hide ads; it will be inefficient at best and harmful at worst, and in particular Adsweep (both extension and Userscript) has harmful FalsePositives. Just use UrlFilter.
