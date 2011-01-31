@@ -20,6 +20,8 @@ Like the unintelligent conversion of Easy List to InPrivate Filtering format but
 
 Ad Sweep, in all of its forms (whether userscript or extension), is merely a way to use Javascript rather than CSS to effect rudimentary ElementHiding; not only is it not good at it, but it creates some frustrating false positives, like hiding the Chatbox on The Wolf Web.
 
+Stop Autoplay on FireFox has a terrible false positive in blocking the plugin required for IE Tab + to work.
+
 I have not found an ad- or malware-blocking HostsFile other than Peter Lowe's without its share of false positives; MVPs, hpHosts, and Malware Domain List end up blocking such ordinary sites as Megaupload, Rapidshare, Filefactory, and even Sourceforge, which are sometimes used to upload malware but do not attempt to use vulnerabilities in browsers or PlugIns to send it to unwitting users. Also, an excessively large HostsFile will by itself slow down your Web browsing; the full hpHosts list by itself is too large, and no amount of optimization via Hosts Man will alleviate the excess.
 
 However, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] has numerous false positives as a PeerBlock list.
