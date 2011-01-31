@@ -10,7 +10,7 @@ Also, although Microsoft was once lax about security in its Web browser, it is n
 
 = Recommendations =
 == Privacy ==
-Download the XML file from [http://www.privacychoice.org/trackerblock/all_companies Privacy Choice] and Import it from the Privacy tab in Internet Options to block most tracking cookies.
+Download the XML file from [http://www.privacychoice.org/trackerblock/no_oversight_companies Privacy Choice] and Import it from the Privacy tab in Internet Options to block most tracking cookies.
 
 == Killbits ==
 Although Microsoft releases its own list of ActiveX KillBits, you should add some more, to stop malware and annoyances from hooking into Internet Explorer, and even if you don't use IE for your daily Web browsing, many Windows applications use it internally, so you should keep IE secured and up-to-date.
@@ -31,5 +31,11 @@ You may also consider using [http://www.ghostery.com/ Ghostery], because it is t
 === Element Hiding ===
 Simple AdBlock uses ElementHiding filters, but InPrivate Filtering does not; also do not attempt to use Fanboy's special CSS file made for OperaBrowser, even though IE supports user stylesheets, because IE's numerous deviations from Web standards lead to disastrous FalsePositives, like hiding the entire Facebook homepage.
 
+Instead, use [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css an alternate stylesheet] based on [http://userstyles.org/styles/299 Ad Blocking FiltersetP].
+
 = Not Recommended ==
 IE7Pro is too bloated to recommend (it also fails to work in IE9 Beta) even though it does effectively prevent PlugIns from auto-launching, while Quero Toolbar is an admirable yet faulty attempt to provide script-blocking in IE; also remember that if a large number of sites are in any Zone (most commonly Restricted Sites), IE will take a long time to load, to keep only those sites that cannot be blocked altogether via the HostsFile, namely IP addresses.
+
+Simple AdBlock suffers from occasional FalsePositives and now costs $29.95 for the fully functional version.
+
+The Privacy Choice list for [http://www.privacychoice.org/trackerblock/all_companies All Companies] has some particularly nasty FalsePositives, keeping people from logging into e-mail accounts at well-known advertisers AOL and Yahoo!
