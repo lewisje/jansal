@@ -5,6 +5,8 @@
 
 Just like using an ad- and malware-blocking HostsFile, this will also keep some malware that may make it onto your computer from working; it may be a bot trying to access a certain IP address used by a command-and-control server, and if that IP is blocked, you will not inadvertently help to send e-mail or forum spam. This program, and similar IP filters, are good not only for your computer but for the Internet as a whole.
 
+Notably, although it is possible to [http://www.ohmpie.com/stopphoninghome/ use the route command] to block particular IP addresses or [http://www.malware-control.com/community-resources/free-delayed-version/ a professionally-maintained blacklist] (with [http://www.malware-control.com/en/safe-network-scan/?test a wonderful security scan] to promote it), they are rather bothersome for mass-blocking, especially use of the route command, and Peer Block is generally the way to go.
+
 = Recommendations =
 First, use the built-in Spyware and Advertising lists, and then add these lists from Bluetack, all set to be updated daily:
 
