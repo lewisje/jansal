@@ -1,6 +1,5 @@
-#summary This deprecated article is about the Filtering, not InPrivate Browsing, popularly known as "Porn Mode"
-
-*NOTE:* This entire section is now deprecated in favor of Simple AdBlock; please delete your In Private Filtering entries and use [http://jansal.googlecode.com/svn/trunk/adblock/DisableInPrivate.reg this Registry file] to keep Filtering from starting by default.
+#summary This is about the Filtering, not InPrivate Browsing, popularly known as "Porn Mode"
+#labels Featured
 
 = An Innovation in Internet Explorer 8 =
 For IE8, Microsoft created a new private browsing mode, and shortly after its announcement in Beta 2 on 27 August 2008, the other browser vendors came out with their own implementations, including Incognito in the first public release of GoogleChrome.
@@ -10,19 +9,17 @@ Approximately one year after its release date, in early 2010, people noticed tha
 == History ==
 Originally [http://fanboy.co.nz/adblock/forums/viewtopic.php?f=6&t=319&p=10498#p10498 the idea was] to convert the AdBlock list created by [https://secure.fanboy.co.nz/ Fanboy] for SRWareIron into an XML file to be imported manually, after the previous filters were manually deleted; now [http://forums.overclockers.co.uk/showpost.php?p=17984832&postcount=51 a script has been created] to download [https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt Easylist without the ElementHiding filters] and make a Registry update file, and it is possible to use this to directly update the list of active filters. The script can be set to run automatically in Vista and later versions of Windows, so that the filters will be up-to-date.
 
-= Directions =
-Install [http://en.wikipedia.org/wiki/Windows_PowerShell PowerShell] if you do not already have it; Windows 7 comes with version 2.0, but version 1.0 will also work.
+Unfortunately that proved to be laden with false positives, so an even better solution needed to be devised, and it came from the loving hands of [http://www.quero.at/ Quero Toolbar] author [http://www.virtualnet.at/hobbies/index.htm Viktor Krammer]: a more intelligently translated [http://www.quero.at/adblock_ie_xml.php version of EasyList] that takes up much less space.
 
+= Directions =
 Download [http://jansal.googlecode.com/svn/trunk/adblock/MakeFilter.zip my modified MakeFilters package] and extract its contents; then put the mf directory in the C:\ directory.
 
 Double-click the included .reg file to enable the filters in both IE8 and IE9; mode 2 (let me decide) is used instead of the originally-recommended mode 1 (automatically block) because mode 1 would pick up any content shared among multiple domains (the exact threshold is set by the user, between 3 and 30) and add it to the filter list, eventually breaking sites relying on such important frameworks as jQuery, Mootools, and YUI.
 Use mode 0 with [http://jansal.googlecode.com/svn/trunk/adblock/DisableInPrivate.reg this .reg file] in case you no longer want the filtering to turn on by default.
 
-Double-click the shortcut "Make Filters (for Admin)" and wait a few minutes; the creation of the .reg file from the downloaded text file is the longest part.
-
-Double-click the .reg file to change the set of filters used by IE8 or higher.
-
-If using Windows Vista or later, follow the included directions to make the creation and use of the filters happen on a regular basis, preferably at a time when the computer will probably not be in use; in Windows XP, the Task Scheduler won't let you do what is necessary, so you may wish to create shortcuts that do the same things as in those automation directions and put them somewhere that is readily accessed, but do not put them in the Startup directory of the Start Menu, because it is important to first make the .reg file and only then try to add it to the Registry.
+Download [http://www.quero.at/download/adblock_ie.xml this XML file], go to Manage Add-Ons from either the Internet Explorer toolbar or from the Programs tab of Internet Options, delete any filters that may already be there, and Import that XML file.
 
 = Closing Remarks =
-This technique has been deprecated in favor of Simple AdBlock, because it does allow the use of ElementHiding filters and supports more filters, with a more powerful syntax, than this method (notably, if too many filters are added to the IE8 filtering mode, it will stop working, the usual user interface for adding or removing filters will not work, and you will need to use the Registry to directly remove the filters, and Simple AdBlock suffers from none of these issues), and it also works in IE6 and IE7; also the aforementioned method for automating filter updates suffers from numerous FalsePositives, while it is too onerous to use the manual method.
+This technique once was deprecated in favor of Simple AdBlock, because it did allow the use of ElementHiding filters and supports more filters, with a more powerful syntax, than this method (notably, if too many filters are added to the IE8 filtering mode, it will stop working, the usual user interface for adding or removing filters will not work, and you will need to use the Registry to directly remove the filters, and Simple AdBlock suffers from none of these issues), and it also works in IE6 and IE7; but both this and the aforementioned method for automating filter updates suffers from numerous FalsePositives, and furthermore the developer of Simple AdBlock has released a paid version, crippling the free version so that only up to 100 ad-requests per day are actually blocked.
+
+I now prefer the solution devised by [http://missviki.at/ Miss Viki].
