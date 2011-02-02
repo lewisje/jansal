@@ -24,7 +24,7 @@ Stop Autoplay on FireFox has a terrible false positive in blocking the plugin re
 
 I have not found an ad- or malware-blocking HostsFile other than Peter Lowe's without its share of false positives; MVPs, hpHosts, and Malware Domain List end up blocking such ordinary sites as Megaupload, Rapidshare, Filefactory, and even Sourceforge, which are sometimes used to upload malware but do not attempt to use vulnerabilities in browsers or PlugIns to send it to unwitting users. Also, an excessively large HostsFile will by itself slow down your Web browsing; the full hpHosts list by itself is too large, and no amount of optimization via Hosts Man will alleviate the excess.
 
-However, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] has numerous false positives as a PeerBlock list, as do the [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits] list and the built-in P2P, Educational, and even Spyware lists.
+However, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] has numerous false positives as a PeerBlock list, as do the [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits] list and all the built-in lists, even Advertising and Spyware.
 
 Kingsoft is notorious for its high [https://docs.google.com/viewer?url=http://av-comparatives.org/images/stories/test/ondret/avc_od_aug2010.pdf rate of false positives], but all other vendors of virus-scanners have notable incidents; Microsoft Security Essentials has the lowest rate among free scanners, avast! also has a low rate, and you should ensure that your VirusScanner does not regularly mark core Windows system files as malicious.
 
