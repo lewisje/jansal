@@ -1,4 +1,5 @@
 #summary Protect the most customizable browser on Earth.
+#labels Featured
 
 = Immunization =
 Use SpyBot and SpywareBlaster to keep certain popups from launching or cookies from being set.
@@ -11,6 +12,8 @@ Install NoScript and follow the recommendations in that article; in particular, 
 
 = Other Recommendations =
 Install [http://www.eff.org/https-everywhere HTTPS Everywhere] to enjoy more end-to-end encryption at your favorite sites and prevent attackers using Wireshark or Firesheep from stealing your session cookies at unencrypted public Internet hotspots and then impersonating you; unfortunately this does break Facebook Chat and some features of Windows Live, so disable it on those sites.
+
+Install [http://www.longurlplease.com/ Long URL Please] so that you won't be deceived by URL shorteners.
 
 Install [http://www.virustotal.com/advanced.html VTZilla] to send suspicious files to Virus Total.
 
