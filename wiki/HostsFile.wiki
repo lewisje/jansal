@@ -54,19 +54,15 @@ First, you should be aware that the first step in this process, if not done care
 
 With that said, ensure that your router is compatible with [http://www.dd-wrt.com/site/index DD-WRT], and then install the latest version that the Wiki says will work, even if it is an SVN; the later, the better, and if it isn't compatible, you can't make use of these Recommendations directly, although you may be able to think of something else that works, like if [http://www.paultow.com/2009/06/10/how-to-block-ads-with-a-router/ Tomato] can be installed.
 
-Basically follow [http://sysadmingeek.com/articles/how-to-remove-advertisements-with-pixelserv-on-dd-wrt/ the steps laid out by Aviad Raviv] (use [http://hotfortech.wikispaces.com/How+to+remove+advertisements+with+pixelserv+on+DD-WRT his earlier directions] for insight into how it all works), but instead of his files, use my special versions of
+Basically follow [http://sysadmingeek.com/articles/how-to-remove-advertisements-with-pixelserv-on-dd-wrt/ the steps laid out by Aviad Raviv] (use [http://hotfortech.wikispaces.com/How+to+remove+advertisements+with+pixelserv+on+DD-WRT his earlier directions] for insight into how it all works), but instead of his files, use my special version of
 
-[https://jansal.googlecode.com/svn/trunk/adblock/personal-ads-list.conf personal-ads-list.conf] (adds the sites that I had manually added into my HOSTS file and removes Ustream and Live Jasmin)
+[https://jansal.googlecode.com/svn/trunk/adblock/AntiAdsDD-WRT.zip the ZIP archive], which adds the sites that I had manually added into my HOSTS file and removes Ustream and Live Jasmin, packs pixelserv with UPX for smaller file-size (but use pixelserv_AR71xx if using an Atheros-based router, and rename it pixelserv), uses my [https://jansal.googlecode.com/svn/trunk/adblock/hostslt.txt list based on] the SpywareBlaster Restricted Sites immunizations, because MVPs has too many FalsePositives, and uses a slightly different variant of [http://pgl.yoyo.org/as/serverlist.php?hostformat=dnsmasq&showintro=0&useip=0.0.0.0&mimetype=plaintext Peter Lowe's Ad Servers] with a smaller initial filesize.
 
-[https://jansal.googlecode.com/svn/trunk/adblock/pixelserv pixelserv] (packed with UPX for smaller file-size, but use [https://jansal.googlecode.com/svn/trunk/adblock/pixelserv_AR71xx this version] if using an Atheros-based router, and rename it pixelserv)
-
-[https://jansal.googlecode.com/svn/trunk/adblock/disable_ads.startup disable_ads.startup] (uses my [https://jansal.googlecode.com/svn/trunk/adblock/hostslt.txt list based on] the SpywareBlaster Restricted Sites immunizations, because MVPs has too many FalsePositives, and using a slightly different variant of [http://pgl.yoyo.org/as/serverlist.php?hostformat=dnsmasq&showintro=0&useip=0.0.0.0&mimetype=plaintext Peter Lowe's Ad Servers] with a smaller initial filesize)
-
-and if your router uses IP addresses starting with 192.168.1.xxx instead of 192.168.0.xxx, replace all occurrences of "192.168.0." with "192.168.1."
+and if your router uses IP addresses starting with 192.168.0.xxx instead of 192.168.1.xxx, replace all occurrences of "192.168.1." with "192.168.0."
 
 Advantages of this method include that it works with all devices connected to that router, that queries to the blocked domains quickly return a 1x1 blank GIF image rather than taking a while to determine that the site is unreachable, and that both base domains and subdomains in Peter Lowe's Ad Servers and the personal ads list are automatically blocked, without needing to list, say, every single sub-domain of Doubleclick.
 
-If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.0.254 to whatever you end up using.
+If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.1.254 to whatever you end up using.
 
 = Not Recommended =
 As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, and Malware Domain List are too large and full of FalsePositives.
