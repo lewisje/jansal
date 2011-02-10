@@ -12,4 +12,4 @@ Now that extensions are available, the browser comes highly recommended; in part
 = Recommendations =
 If in an environment supporting only versions of Safari before 5 (Tiger or earlier versions of OS X), at least get [http://clicktoflash.com/ ClickToFlash].
 
-Otherwise, install AdBlock and follow the Recommendations, and install Plugin Customs; unfortunately there is no good analogue for NoScript except with respect to blocking of PlugIns.
+Otherwise, install AdBlock and follow the Recommendations, and install Plugin Customs; unfortunately there is no good analogue for NoScript except with respect to blocking of PlugIns. Also consider Ultimate Status Bar for its URL-unshortening ability and also TwitterSSL.
