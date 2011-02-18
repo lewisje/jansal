@@ -10,7 +10,7 @@ In some contexts, such as government or corporate secrets, the emphasis is on av
 This wiki instead advocates avoiding false positives, by blocking the most common vectors of malware distribution without keeping users from doing normal activities they want to do, even though it may be unproductive or immoral; if something excessively hampers usability or blocks important and legitimate websites, it will not be recommended here, even though it may enhance security.
 
 = Notable Techniques with Excessive False Positives =
-Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in InternetExplorer, ends up hiding the Facebook homepage because of the variance from Web standards in its layout engine; I previously advocated [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css an alternate stylesheet] for some ElementHiding, but I noticed a false Positive keeping the Chatterbox from loading on The Wolf Web.
+Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in InternetExplorer, ends up hiding the Facebook homepage because of the variance from Web standards in its layout engine; I previously advocated [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css an alternate stylesheet] for some ElementHiding, but I noticed a false positive keeping the Chatterbox from loading on The Wolf Web.
 
 Also, both Simple AdBlock (which has since started charging money) and the method to automate InPrivate Filtering lists suffer from notable false positives and so are no longer recommended.
 
