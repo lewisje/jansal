@@ -13,8 +13,8 @@ Don't use any of the built-in lists; instead add these lists from Bluetack, all 
   * [http://list.iblocklist.com/lists/bluetack/dshield Malicious Hackers]
   * [http://list.iblocklist.com/lists/bluetack/forum-spam Forum Spammers]
   * [http://list.iblocklist.com/lists/bluetack/hijacked Spammers]
-  * [http://list.iblocklist.com/lists/bluetack/bogon Bogon]
-Also consider the [http://list.iblocklist.com/lists/abuse/ZeuS ZeuS tracker], the [http://list.iblocklist.com/lists/atma/atma list by Atma], and a list I extracted from the [http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot immunizations].
+  * 
+Also consider the [http://list.iblocklist.com/lists/abuse/ZeuS ZeuS tracker] and a list I extracted from the [http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt Spybot immunizations].
 
 Next, go to the Settings menu, choose to log nothing, and turn off notifications.
 
@@ -26,3 +26,5 @@ If you use Vista or later, follow these [http://www.peerblock.com/userguide/how_
 Basically, if I didn't list it, don't use it; in particular you should uncheck the P2P list and not use the Education list, unless you don't want to visit Apple (or use iTunes) or such websites as Harvard, MIT, or your _alma mater_.
 
 Also, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext Peter Lowe's Ad Servers] appears to have some FalsePositives that the HostsFile version does not have, because some ad servers reside on the same IP addresses as legitimate sites; so do [http://list.iblocklist.com/lists/bluetack/web-exploit Web Exploits] (Bluehost login) and all of the built-in lists, even Spyware (Cincinnati Modern) and Advertising (eHow).
+
+Apparently [http://list.iblocklist.com/lists/bluetack/bogon Bogon] from Bluetack blocks 244.0.0.252, the address used for Link-Local Multicast Name Resolution (LLMNR) on IPv4, while the [http://list.iblocklist.com/lists/atma/atma list by Atma] blacklists the Border Gateway Protocol (BGP) address used by well-known IPv6 tunnel-broker Hurricane Electric (bgp.he.net).
