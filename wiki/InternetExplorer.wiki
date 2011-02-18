@@ -22,20 +22,20 @@ Finally, don't use SpyBot for any purpose other than immunization: Its scanning 
 Use [http://www.javacoolsoftware.com/spywareblaster.html SpywareBlaster] with [http://koti.mbnet.fi/pattaya1/customblocking.txt this Custom Blocking List] and after updating, protect all items except for Restricted Sites, and then go to Tools and then Custom Blocking and protect all of those entries too; if you want you can also use this program to keep Flash from running in IE at all, and then your users won't get so much as a request to install Flash (which happens if your users do not have Flash installed and browse a site in IE that uses Flash), but I don't recommend such a drastic measure.
 
 == Ad-Blocking ==
-Use a special method I found to easily update your InPrivate filters in IE8+ and automatically enable InPrivate Filtering; you may also consider using [http://www.ghostery.com/ Ghostery], because it is the only reliable way to block at least some scripts, but its interface is significantly more difficult to use in IE than in the other browsers that it is supported with (FireFox, GoogleChrome, and AppleSafari), and its interference with the Google Maps widgets embedded in several websites can be considered a false positive.
+Use a special method I found to easily update your InPrivate filters in IE8 and automatically enable InPrivate Filtering (in IE9+ use TrackingProtection Lists and disable your custom list); you may also consider using [http://www.ghostery.com/ Ghostery], because it is the only reliable way to block at least some scripts, but its interface is significantly more difficult to use in IE than in the other browsers that it is supported with (FireFox, GoogleChrome, and AppleSafari), and its interference with the Google Maps widgets embedded in several websites can be considered a false positive.
 
 [http://free.antivirus.com/browser-guard/ TrendMicro BrowserGuard] claims to block malicious Javascript that exploits zero-day vulnerabilities, but it runs all of the time, even when IE is not in use, and its effectiveness is questionable; I use it, but maybe you might not want to, and it is also still in beta.
 
 === Element Hiding ===
 Simple AdBlock uses ElementHiding filters, but InPrivate Filtering does not; also do not attempt to use Fanboy's special CSS file made for OperaBrowser, even though IE supports user stylesheets, because IE's numerous deviations from Web standards lead to disastrous FalsePositives, like hiding the entire Facebook homepage.
 
-Instead, use [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css an alternate stylesheet] based on [http://userstyles.org/styles/299 Ad Blocking FiltersetP].
-
 = Not Recommended ==
 IE7Pro is too bloated to recommend (it also fails to work in IE9 Beta) even though it does effectively prevent PlugIns from auto-launching, while Quero Toolbar is an admirable yet faulty attempt to provide script-blocking in IE; also remember that if a large number of sites are in any Zone (most commonly Restricted Sites), IE will take a long time to load, to keep only those sites that cannot be blocked altogether via the HostsFile, namely IP addresses.
 
 Simple AdBlock suffers from occasional FalsePositives and now costs $29.95 for the fully functional version.
 
-The Privacy Choice list for [http://www.privacychoice.org/trackerblock/all_companies All Companies] has some particularly nasty FalsePositives, keeping people from logging into e-mail accounts at well-known advertisers AOL and Yahoo!
+The Privacy Choice list for [http://www.privacychoice.org/trackerblock/all_companies All Companies] has some particularly nasty FalsePositives, keeping people from logging into e-mail accounts at well-known advertisers AOL and Yahoo!; also don't use its more aggressive TrackingProtection List, and stay away from the Trust-e list, which is more infamous for false _negatives_, letting many an ad-server go free.
+
+I previously advocated [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css an alternate stylesheet] for some ElementHiding, but I noticed FalsePositives keeping the Chatterbox from loading on The Wolf Web, among other things.
 
 Do not clear your History unless you also wish to clear the list of sites you have set to use Compatibility View.
