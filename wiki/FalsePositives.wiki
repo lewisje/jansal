@@ -10,7 +10,7 @@ In some contexts, such as government or corporate secrets, the emphasis is on av
 This wiki instead advocates avoiding false positives, by blocking the most common vectors of malware distribution without keeping users from doing normal activities they want to do, even though it may be unproductive or immoral; if something excessively hampers usability or blocks important and legitimate websites, it will not be recommended here, even though it may enhance security.
 
 = Notable Techniques with Excessive False Positives =
-Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in InternetExplorer, ends up hiding the Facebook homepage because of the variance from Web standards in its layout engine.
+Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in InternetExplorer, ends up hiding the Facebook homepage because of the variance from Web standards in its layout engine; I previously advocated [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css an alternate stylesheet] for some ElementHiding, but I noticed a FalsePositive keeping the Chatterbox from loading on The Wolf Web.
 
 Also, both Simple AdBlock (which has since started charging money) and the method to automate InPrivate Filtering lists suffer from notable false positives and so are no longer recommended.
 
@@ -29,5 +29,7 @@ However, [http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimet
 Kingsoft is notorious for its high [https://docs.google.com/viewer?url=http://av-comparatives.org/images/stories/test/ondret/avc_od_aug2010.pdf rate of false positives], but all other vendors of virus-scanners have notable incidents; Microsoft Security Essentials has the lowest rate among free scanners, avast! also has a low rate, and you should ensure that your VirusScanner does not regularly mark core Windows system files as malicious.
 
 The old recommendation to have InPrivate Filtering automatically start in mode 1 (Automatic) rather than 2 (Let me decide) caused InternetExplorer to build up a slew of false positives after browsing enough domains that used such widespread and fundamental Javascript frameworks as jQuery, Mootools, and YUI, eventually breaking a large portion of the Web.
+
+Do not use the more aggressive TrackingProtection List offered by Privacy Choice, for the same reason as with the aforementioned cookie-policy XML file; notably you should also stay away from the Trust-e list because of its false _negatives_.
 
 The Website Blocking feature of the Protection Module of the paid version of Malwarebytes blocks 7chan and has some other notable false positives, so it is no longer recommended.
