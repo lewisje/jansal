@@ -13,11 +13,11 @@ I also intend to let you know what I have found to be more trouble than it's wor
 
 Malvertising is advertising that delivers malware, either because an advertiser has been hacked into and then its ads (embedded randomly into sites around the world) start delivering malicious payloads or because a cybercriminal has tricked an ad network into running a malicious ad.
 
-Extensions like AdBlock Plus and features like InPrivate Filtering and OperaBrowser's UrlFilter are advertised as ways to keep Web annoyances away or prevent advertisers from invading your privacy with tracking scripts and Web bugs, but more importantly they can be used to block content from _any_ URL, whether merely annoying, subject to hijacking by a malvertiser, or even a known source of malware.
+Extensions like AdBlock Plus and features like InPrivate Filtering or TrackingProtection Lists and OperaBrowser's UrlFilter are advertised as ways to keep Web annoyances away or prevent advertisers from invading your privacy with tracking scripts and Web bugs, but more importantly they can be used to block content from _any_ URL, whether merely annoying, subject to hijacking by a malvertiser, or even a known source of malware.
 
 == Script and Plugin Blocking ==
 
-Only one mainstream browser, FireFox, has a decent way to manage script permissions (the NoScript extension), while all but InternetExplorer have something more important: a way to keep PlugIns from automatically launching.
+Only one mainstream browser, FireFox, has a decent way to manage script permissions (the NoScript extension), while all but InternetExplorer have something more important: a granular way to keep PlugIns from automatically launching.
 
 This is important, because [https://krebsonsecurity.com/2010/05/revisiting-the-eleonore-exploit-kit/ a substantial portion of attempts by malicious websites to infect your computer actually use your PlugIns], because they are cross-platform and cross-browser, tend to have more vulnerabilities, and aren't updated as often as browsers; the most-targeted PlugIns are Adobe Flash, Java, and Adobe Reader, which are also among the most useful. Be sure to keep your PlugIns updated; [https://www.mozilla.com/en-US/plugincheck/ Mozilla Plugin Check] will help the most (it works best on FireFox 3.6 and worst in InternetExplorer, but it works everywhere), while [https://secbrowsing.appspot.com/ SecBrowsing] looks at fewer PlugIns but is updated more quickly and comes with a handy extension for GoogleChrome to check for outdated PlugIns in real-time.
 
@@ -35,7 +35,7 @@ As an additional layer of security, use an alternate DNS provider either in your
 
 == Hiding Elements and Blocking Tracking Cookies ==
 
-The AdBlock-style extensions for FireFox, GoogleChrome, and AppleSafari support ElementHiding rules in their filter lists, while all major browsers support a custom user stylesheet (commonly intended for accessibility reasons), which can be used to hide elements and collapse the gaps left behind when third-party advertising is blocked; unfortunately [https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css the most-recommended stylesheet] doesn't work well in Internet Explorer, for which [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css this stylesheet] should be used.
+The AdBlock-style extensions for FireFox, GoogleChrome, and AppleSafari support ElementHiding rules in their filter lists, while all major browsers support a custom user stylesheet (commonly intended for accessibility reasons), which can be used to hide elements and collapse the gaps left behind when third-party advertising is blocked; unfortunately [https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css the most-recommended stylesheet] doesn't work well in InternetExplorer, for which [https://jansal.googlecode.com/svn/trunk/adblock/userContent.css this stylesheet] should be used.
 
 Also, SpyBot blocks some of the more undesirable cookies in OperaBrowser, FireFox, and InternetExplorer, while SpywareBlaster blocks a lot more (but not in OperaBrowser), and Privacy Choice even offers a list that can be directly imported into InternetExplorer.
 
