@@ -2,7 +2,7 @@
 #labels Featured
 
 = An Innovation in Internet Explorer 8 =
-For IE8, Microsoft created a new private browsing mode, and shortly after its announcement in Beta 2 on 27 August 2008, the other browser vendors came out with their own implementations, including Incognito in the first public release of GoogleChrome.
+For InternetExplorer 8, Microsoft created a new private browsing mode, and shortly after its announcement in Beta 2 on 27 August 2008, the other browser vendors came out with their own implementations, including Incognito in the first public release of GoogleChrome.
 
 Approximately one year after its release date, in early 2010, people noticed that just as the HostsFile can be turned to a good use contrary to its original intent, so can the new filtering mode of IE8, which is an improvement over using the Restricted Sites zone as had been done since IE4.
 
