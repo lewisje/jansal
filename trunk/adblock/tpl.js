@@ -1,0 +1,44 @@
+http=new ActiveXObject("Microsoft.XMLHTTP");
+fso=new ActiveXObject("Scripting.FileSystemObject");
+W=new Array("https://secure.fanboy.co.nz/fanboy-adult.txt",
+ "https://secure.fanboy.co.nz/fanboy-dimensions.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/adblock-gannett.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/fanboy-adblocklist-addon.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/fanboy-adblocklist-current-expanded.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/fanboy-adblocklist-current-p2p.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/fanboy-adblocklist-stats-intl.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/fanboy-adblocklist-stats.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-chn.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-cz.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-esp.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-ind.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-ita.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-jpn.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-krn.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-pol.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-rus-v2.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-swe.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-tky.txt",
+ "https://fanboy-adblock-list.googlecode.com/hg/firefox-regional/fanboy-adblocklist-vtn.txt",
+ "https://adversity.googlecode.com/hg/Antisocial.txt",
+ "https://adversity.googlecode.com/hg/Adversity.txt",
+ "https://adversity.googlecode.com/hg/Adversity-Adult.txt",
+ "https://adversity.googlecode.com/hg/Adversity-p2p.txt",
+ "https://adversity.googlecode.com/hg/Adversity-Tracking.txt",
+ "http://malwaredomains.lanik.us/malwaredomains_full.txt",
+ "http://malwarepatrol.com/cgi/submit?action=list_adblock",
+ "http://rickrolldb.com/ricklist.txt",
+ "http://pgl.yoyo.org/as/serverlist.php?hostformat=adblock&showintro=0&startdate[day]=&startdate[month]=&startdate[year]=&mimetype=plaintext");
+i=0;
+while(i<W.length){
+ f=fso.CreateTextFile(file="subscriptions\\"+W[i].match(/[-a-zA-Z0-9_\.]*$/),true);
+ http.open("GET", website=W[i++], false);
+ http.setRequestHeader("Accept","text/html");
+ http.send();
+ f.Write(http.responseText);
+ f.Close();
+}
+f=fso.GetFile("subscriptions\\list_adblock");
+f.name="malpatrol.txt";
+f=fso.GetFile("subscriptions\\plaintext");
+f.name="pgl.txt";
