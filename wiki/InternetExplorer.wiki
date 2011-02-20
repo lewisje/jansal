@@ -34,7 +34,7 @@ IE7Pro is too bloated to recommend (it also fails to work in IE9 Beta) even thou
 
 Simple AdBlock suffers from occasional FalsePositives and now costs $29.95 for the fully functional version.
 
-The Privacy Choice list for [http://www.privacychoice.org/trackerblock/all_companies All Companies] has some particularly nasty FalsePositives, keeping people from logging into e-mail accounts at well-known advertisers AOL and Yahoo!; also don't use its more aggressive TrackingProtection List, and stay away from the Trust-e list, which is more infamous for false _negatives_, letting many an ad-server go free.
+The Privacy Choice list for [http://www.privacychoice.org/trackerblock/all_companies All Companies] has some particularly nasty FalsePositives, keeping people from logging into e-mail accounts at well-known advertisers AOL and Yahoo!; also don't use its more aggressive TrackingProtection List, and stay away from the TRUSTe list, which is more infamous for false _negatives_, letting many an ad-server go free.
 
 ActiveX Filtering is more trouble than it's worth: It lacks the granularity to un-block content on an object-by-object basis, and instead it either blocks all content embedded on a site or none of it.
 
