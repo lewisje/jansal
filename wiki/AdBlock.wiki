@@ -13,8 +13,8 @@ Although marketed to keep ads from annoying users, these extensions also allow f
 [https://adblockplus.org/ Adblock Plus] is the original and best content-filtering implementation on any browser, capable of perfectly blocking content from being downloaded (even within plugins like Flash, so advertisements in videos can be blocked), with lists that can be automatically updated and include whitelists, ElementHiding, and a powerful and flexible syntax.
 
 == Chrome (4+) ==
-[http://chromeadblock.com/ Adblock for Chrome] from Michael Gundlach (Georgia, United States), although [https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™ (Beta)] (formerly Adthwart from Tom Joseph of the United States) is faster yet blocks less and hides more, and it may become superior to Adblock for Chrome once it leaves beta; Gundlach's extension now registers the abp: pseudo-protocol just like Adblock Plus for FireFox does, and Palant's new Chrome extension may do that too now.
-An important limitation of Chrome itself is that extensions cannot modify plugin content, so most advertising inside Flash videos will still go through, but that isn't a serious security risk.
+[https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™] (formerly Adthwart from Tom Joseph of the United States) is now superior to Michael Gundlach's [http://chromeadblock.com/ Adblock for Chrome] because it blocks just as much yet runs faster and uses less memory; Gundlach's extension now registers the abp: pseudo-protocol just like Adblock Plus for FireFox does, and Palant's extension may soon do that.
+An important limitation of Chrome itself is that extensions cannot modify plugin content, so most advertising inside Flash videos will still go through, but that isn't a serious security risk; notably YouTube ads can still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated.
 
 == Safari (5+) ==
 [http://safariadblock.com/ Adblock for Safari] is based on Adblock for Chrome and written by the same author shortly after extension support was added; this extension actually blocks content perfectly because Safari does not suffer from [http://code.google.com/p/chromium/issues/detail?id=35897 the subtle timing issue] that Chromium does.
@@ -59,4 +59,4 @@ Note that this list does not block the main pages of these sites, so Facebook, T
 
 = Not Recommended =
 Basically, if I didn't list it, you shouldn't use it; in particular Fanboy's list is not optimized for the Adblock Plus engine and definitely should not be used in combination with the recommended list, although it is also maintained for OperaBrowser and SRWare Iron and forms the basis of my recommended filter lists for those browsers.
-Also, I no longer recommend Simple Adblock for Internet Explorer; instead you should rely on an InPrivate Filtering list.
+Also, I no longer recommend Simple Adblock for Internet Explorer; instead you should rely on an InPrivate Filtering list (IE8, Windows XP) or Tracking Protection List (IE9, Vista or later).
