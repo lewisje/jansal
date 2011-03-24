@@ -27,7 +27,7 @@ Use a special method I found to easily update your InPrivate filters in IE8 and 
 [http://free.antivirus.com/browser-guard/ TrendMicro BrowserGuard] claims to block malicious Javascript that exploits zero-day vulnerabilities, but it runs all of the time, even when IE is not in use, and its effectiveness is questionable; I use it, but maybe you might not want to, and it is also still in beta.
 
 === Element Hiding ===
-Simple AdBlock uses ElementHiding filters, but InPrivate Filtering does not; also do not attempt to use Fanboy's special CSS file made for OperaBrowser, even though IE supports user stylesheets, because IE's numerous deviations from Web standards lead to disastrous FalsePositives, like hiding the entire Facebook homepage.
+Simple AdBlock uses ElementHiding filters, but InPrivate Filtering and TrackingProtection do not; use [https://secure.fanboy.co.nz/opera/fanboy-adblocklist-elements-v4.css Fanboy's special user stylesheet] for ElementHiding, now that Simple AdBlock is deprecated.
 
 = Not Recommended ==
 IE7Pro is too bloated to recommend (it also fails to work in IE9 Beta) even though it does effectively prevent PlugIns from auto-launching, while Quero Toolbar is an admirable yet faulty attempt to provide script-blocking in IE; also remember that if a large number of sites are in any Zone (most commonly Restricted Sites), IE will take a long time to load, to keep only those sites that cannot be blocked altogether via the HostsFile, namely IP addresses.
