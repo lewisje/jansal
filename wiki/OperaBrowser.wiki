@@ -14,7 +14,7 @@ Then go to http://jansal.net/opera/ and put all of the scripts from the salr dir
 Also, download [https://jansal.googlecode.com/svn/trunk/adblock/urlfilter.ini my special urlfilter.ini] and put it somewhere, then make a blank file called "opera6.ini" (so that SpyBot can detect it) and go into your Preferences to make Opera know where to find its UrlFilter.
 This UrlFilter is a combination of what [https://secure.fanboy.co.nz/ Fanboy does] and the immunizations that SpyBot has made ever since Opera introduced UrlFilter in version 9.
 
-Use [https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css the best element-hiding stylesheet ever] to perform rudimentary ElementHiding; put it somewhere, probably wherever the UrlFilter is, and let Opera know to use that as your custom stylesheet.
+Use [https://secure.fanboy.co.nz/opera/fanboy-adblocklist-elements-v4.css the best element-hiding stylesheet ever] to perform rudimentary ElementHiding; put it somewhere, probably wherever the UrlFilter is, and let Opera know to use that as your custom stylesheet.
 
 = Extensions =
 Unfortunately Opera's extension support is still somewhat immature, and there is not yet a good extension or Userscript to achieve ElementHiding or script-blocking, and absolutely nothing apart from using the "Blocked Content..." dialog or shutting down the browser will let the UrlFilter be altered.
