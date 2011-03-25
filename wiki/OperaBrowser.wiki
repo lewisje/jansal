@@ -30,6 +30,7 @@ Once Swiss Knife has been installed, you should ensure that "Automatic Redirect"
   * `^http://wikimediafoundation\.org/w`
   * `^http://(download|dumps)\.wikimedia\.org/`
   * `^http://www\.facebook\.com/(plugins|settings)/`
+  * `^http://apps\.facebook\.com/`
   * `tbs=shop`
   * `^http://www\.nytimes\.com/best-sellers-books/`
 
