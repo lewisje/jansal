@@ -17,7 +17,7 @@ Then if you run a local ad-blocking proxy server (which I do not recommend, beca
 
 After that, if you are behind a router (and you should be, so that an attacker who knows your IP address will only be able to probe the router, rather than directly going for your computer), your router's DNS cache will be consulted.
 
-After that, the DNS servers for your ISP (or if you use one of the the top 6 alternative DNS services listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], which I recommend, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
+After that, the DNS servers for your ISP (or if you use one of the the top 6 alternative DNS services, including the newly IPv6-capable Open DNS, listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], which I recommend, except Clear Cloud, which will terminate on 1 September 2011, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
 
 If necessary, the queries can go all of the way up to the DNS root servers, a set of 13 servers virtualized over dozens of computers around the world, which hold the authoritative domain name information for every website on the Internet that has registered a domain name (not all do); this very rarely happens, and when it does, your ISP or alternative DNS provider quickly caches the result and uses it for a long time.
 
@@ -61,7 +61,7 @@ If your router uses IP addresses starting with 192.168.0.xxx instead of 192.168.
 
 Advantages of this method include that it works with all devices connected to that router, that queries to the blocked domains quickly return a 1x1 blank GIF image rather than taking a while to determine that the site is unreachable, and that both base domains and subdomains in Peter Lowe's Ad Servers and the personal ads list are automatically blocked, without needing to list, say, every single sub-domain of Doubleclick.
 
-If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.1.254 to whatever you end up using.
+If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.1.254 to whatever you end up using; additionally, consider using [http://pgl.yoyo.org/as/serverlist.php?hostformat=proxyautoconfig&useip=192.168.1.254&mimetype=plaintext this Proxy Auto-Configuration file] with [http://www.ericphelps.com/security/pac.htm this advice], making sure to use [http://www.schooner.com/~loverso/no-ads/IE-auto-proxy-cache.reg this Registry file] if on Windows.
 
 = Not Recommended =
 As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, and Malware Domain List are too large and full of FalsePositives.
