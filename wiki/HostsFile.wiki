@@ -62,6 +62,7 @@ If your router uses IP addresses starting with 192.168.0.xxx instead of 192.168.
 Advantages of this method include that it works with all devices connected to that router, that queries to the blocked domains quickly return a 1x1 blank GIF image rather than taking a while to determine that the site is unreachable, and that both base domains and subdomains in Peter Lowe's Ad Servers and the personal ads list are automatically blocked, without needing to list, say, every single sub-domain of Doubleclick.
 
 If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.1.254 to whatever you end up using; additionally, consider using [http://pgl.yoyo.org/as/serverlist.php?hostformat=proxyautoconfig&useip=192.168.1.254&mimetype=plaintext this Proxy Auto-Configuration file] with [http://www.ericphelps.com/security/pac.htm this advice], making sure to use [http://www.schooner.com/~loverso/no-ads/IE-auto-proxy-cache.reg this Registry file] if on Windows.
+You may also consider using [http://pgl.yoyo.org/as/#other Peter Lowe's Ad Servers] in conjunction with the DNS Cache on Windows.
 
 = Not Recommended =
 As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, and Malware Domain List are too large and full of FalsePositives.
