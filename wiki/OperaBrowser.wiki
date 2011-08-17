@@ -11,13 +11,13 @@ Now that Opera has Unite and Extensions, its memory usage has gotten worse, but 
 Make a Userscript directory (Opera does not set one by default); try putting it inside your program directory or your profile.
 Then go to http://jansal.net/opera/ and put all of the scripts from the salr directory in your Userscript directory (the name came about because the first Userscripts I ever used were based on a now-obsolete port of the Something Awful Last Read extension for FireFox), especially allblock.js, which reliably blocks all PlugIns (be sure to set `opera:config#UserPrefs|UserJavaScriptonHTTPS` to True and you get just one warning per browser session, and also press Ctrl+Shift+F to enable all PlugIns on a particular page).
 
-Also, download [https://jansal.googlecode.com/svn/trunk/adblock/urlfilter.ini my special urlfilter.ini] and put it somewhere, then make a blank file called "opera6.ini" (so that SpyBot can detect it) and go into your Preferences to make Opera know where to find its UrlFilter.
+Also, download [https://jansal.googlecode.com/svn/trunk/adblock/urlfilter.ini my special urlfilter.ini] for versions of Opera before 11.10 and put it somewhere, then make a blank file called "opera6.ini" (so that SpyBot can detect it) and go into your Preferences to make Opera know where to find its UrlFilter (for current versions, just let SpyBot do its immunization normally and use Opera Adblock for all other sources of filter-lists).
 This UrlFilter is a combination of what [https://secure.fanboy.co.nz/ Fanboy does] and the immunizations that SpyBot has made ever since Opera introduced UrlFilter in version 9.
 
 Use [https://secure.fanboy.co.nz/opera/fanboy-adblocklist-elements-v4.css the best element-hiding stylesheet ever] to perform rudimentary ElementHiding; put it somewhere, probably wherever the UrlFilter is, and let Opera know to use that as your custom stylesheet.
 
 = Extensions =
-Unfortunately Opera's extension support is still somewhat immature, and there is not yet a good extension or Userscript to achieve ElementHiding or script-blocking, and absolutely nothing apart from using the "Blocked Content..." dialog or shutting down the browser will let the UrlFilter be altered.
+Unfortunately Opera's extension support is still somewhat immature, but Opera Adblock by Leomajko will allow for filter-subscriptions to be made to the UrlFilter.
 
 With that said, there are still some good extensions for security-minded folks...
 
@@ -41,7 +41,7 @@ Finally, both Virus Total and WOT now make extensions for Opera; use them to res
 For enhanced usability, consider Gmail Compose (so you use Gmail rather than launching an external client, or Opera's built-in client if you don't use it, on clicking mailto: links) Binfix (so you're less likely to get gibberish filling your screen when you meant to _download_ that RAR file), Gcache (easy access to the Google Cache), Wayback Machine, Mini Wikipedia, Mini Wolfram Alpha, Translator (similar to the built-in functionality in GoogleChrome) Youtube Downloader, Opera Internal Pages, and Opera Configurator (easy access to your Preferences, without needing to leave your current tab).
 
 = Not Recommended =
-Do not use any extension that claims to block or hide ads; it will be inefficient at best and harmful at worst, and in particular Adsweep (both extension and Userscript) has harmful FalsePositives. Just use UrlFilter.
+Do not use any other extension that claims to block or hide ads; it will be inefficient at best and harmful at worst, and in particular Adsweep (both extension and Userscript) has harmful FalsePositives. Just use UrlFilter, but keep in mind that my special file will now be updated only infrequently, now that Opera 11.10 and greater have a decent extension in Opera Adblock that makes use of the URL Filter API.
 
 I cannot yet recommend any script-blocker; External Scripts is too fine-grained to be easily trained as No Script is, while the Opera version of Not Scripts is more unstable than the version for GoogleChrome, even though its feature-set is nicer and it doesn't require digging inside the extension directory to set a password within a .js file for encryption of HTML5 Local Storage just to get the extension to work. At any rate, there is a perfectly-good blocker for auto-launching of PlugIns, so just use that.
 
