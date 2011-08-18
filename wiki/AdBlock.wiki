@@ -23,8 +23,8 @@ There once were some cumbersome programs for the OS X version of AppleSafari, bu
 == Internet Explorer (6+) ==
 [http://simple-adblock.com/ Simple Adblock], which comes with hard-coded subscriptions and a limited ability to add filters manually to a particular text file, was once recommended but now is only for those willing to deal with FalsePositives and pay $29.95; unlike InPrivate Filtering, this works on IE6 and IE7 too, and it also allows for ElementHiding.
 
-== Opera (11+) ==
-No suitable extension currently exists; the most popular OperaBrowser extension right now does not even work, and no extension can modify the core of its content-filtering: the UrlFilter file.
+== Opera (11.10+) ==
+No suitable extension currently exists for Adblock Plus-style lists; the most popular OperaBrowser extension, Opera Adblock, instead uses subscriptions complying with the URL Filter API.
 
 == SRWare Iron (3+) ==
 [https://chrome.google.com/extensions/detail/chmimgmjdabgiilljdjfbonifbhiglao Adblock+ Element Hiding Helper], which uses only the ElementHiding rules and works in concert with AdblockIni, may clear some of the empty spaces left behind when content is blocked.
