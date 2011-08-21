@@ -10,7 +10,7 @@ Also, although Microsoft was once lax about security in its Web browser, it is n
 
 = Recommendations =
 == Privacy ==
-Download the XML file from [http://www.privacychoice.org/trackerblock/no_oversight_companies Privacy Choice] or [http://pgl.yoyo.org/as/serverlist.php?hostformat=msie-nocookies-xml&showintro=0&mimetype=plaintext Peter Lowe], or even better, [https://jansal.googlecode.com/svn/trunk/adblock/serverlist-cookie.xml my combination of the two], and Import it from the Privacy tab in Internet Options to block most tracking cookies.
+Download the XML file from [http://www.privacychoice.org/trackerblock/no_oversight_companies Privacy Choice] and Import it from the Privacy tab in Internet Options to block most tracking cookies.
 
 == Killbits ==
 Although Microsoft releases its own list of ActiveX KillBits, you should add some more, to stop malware and annoyances from hooking into Internet Explorer, and even if you don't use IE for your daily Web browsing, many Windows applications use it internally, so you should keep IE secured and up-to-date.
