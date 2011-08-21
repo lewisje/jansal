@@ -1,4 +1,4 @@
-#summary There are many extensions with this name, one for every major browser except Opera.
+#summary There are many extensions with this name, at least one for every major browser.
 #labels Featured
 
 = Adblock: Content-Filtering Extensions =
