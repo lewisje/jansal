@@ -15,6 +15,7 @@ Although marketed to keep ads from annoying users, these extensions also allow f
 == Chrome (4+) ==
 [https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™] (formerly Adthwart from Tom Joseph of the United States) is now superior to Michael Gundlach's [http://chromeadblock.com/ Adblock for Chrome] because it blocks just as much yet runs faster and uses less memory; Gundlach's extension now registers the abp: pseudo-protocol just like Adblock Plus for FireFox does, and Palant's extension may soon do that.
 An important limitation of Chrome itself is that extensions cannot modify plugin content, so most advertising inside Flash videos will still go through, but that isn't a serious security risk; notably YouTube ads can still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated.
+However, with the upcoming (and currently experimental) Web Request API, content-blocking in Chrome will be at parity with Safari and Firefox; if you have enabled experimental APIs in chrome://flags you can [http://adthwart.qux.us/files/wr-abp.crx try it now].
 
 == Safari (5+) ==
 [http://safariadblock.com/ Adblock for Safari] is based on Adblock for Chrome and written by the same author shortly after extension support was added; this extension actually blocks content perfectly because Safari does not suffer from [http://code.google.com/p/chromium/issues/detail?id=35897 the subtle timing issue] that Chromium does.
