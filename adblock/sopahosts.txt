@@ -1,0 +1,232 @@
+# SOPA Emergency IP list HOSTS file:
+#
+# So if these ass-fucks in DC decide to ruin the internet, here’s how to access
+# your favorite sites in the event of a DNS takedown: Put the lines below into
+# your HOSTS file, making sure to keep any necessary lines intact, including
+# lines with "localhost" or "broadcasthost" or any intranet hostnames or ad- or
+# malware-blocking entries (usually mapped to 0.0.0.0 or 127.0.0.1 or the IP
+# address of a local instance of pixelserv).
+#
+# BlockAid status page
+46.246.119.139 status.block.aid
+#
+# News
+212.58.241.131 bbc.co.uk
+198.78.201.252 aljazeera.com
+#
+# Google Properties
+74.125.115.99 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.115.103 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.115.104 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.115.105 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.115.106 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.115.147 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.157.99 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.157.103 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.157.104 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.157.105 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.157.106 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.157.147 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.147.99 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.147.103 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.147.104 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.147.105 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.147.106 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.147.147 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.229.99 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.229.103 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.229.104 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.229.105 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.229.106 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+209.85.229.147 google.com www.google.com www.l.google.com googlecode.com android.com google.co.uk www.google.co.uk google.ca www.google.ca
+74.125.45.99 googlepages.com
+74.125.45.103 googlepages.com
+74.125.45.104 googlepages.com
+74.125.45.105 googlepages.com
+74.125.45.106 googlepages.com
+74.125.45.147 googlepages.com
+74.125.65.91 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.96 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.97 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.98 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.99 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.100 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.101 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.102 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.103 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.104 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.105 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.106 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.107 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.108 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.109 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.110 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.225.111 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.128 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.129 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.130 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.131 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.132 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.133 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.134 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.135 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.136 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.137 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.138 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.139 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.140 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.141 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.142 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+173.194.34.143 sites.google.com plus.google.com code.google.com code.l.google.com chrome.google.com www.android.com market.android.com android-market.l.google.com
+74.125.65.91 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.96 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.97 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.98 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.99 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.100 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.101 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.102 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.103 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.104 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.105 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.106 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.107 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.108 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.109 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.110 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.225.111 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.128 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.129 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.130 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.131 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.132 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.133 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.134 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.135 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.136 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.137 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.138 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.139 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.140 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.141 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.142 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+173.194.34.143 encrypted.google.com www3.l.google.com youtube.com www.youtube.com www.youtube-nocookie.com youtube-ui.l.google.com youtu.be video.google.com video.l.google.com
+74.125.45.100 youtube-nocookie.com
+74.125.67.100 youtube-nocookie.com
+74.125.127.100 youtube-nocookie.com
+74.125.225.117 gmail.com googlemail.com mail.google.com googlemail.l.google.com
+74.125.225.118 gmail.com googlemail.com mail.google.com googlemail.l.google.com
+74.125.225.119 gmail.com googlemail.com mail.google.com googlemail.l.google.com
+74.125.230.149 gmail.com googlemail.com mail.google.com googlemail.l.google.com
+74.125.230.150 gmail.com googlemail.com mail.google.com googlemail.l.google.com
+74.125.230.151 gmail.com googlemail.com mail.google.com googlemail.l.google.com
+209.85.145.85 orkut.com www.orkut.com orkut-fe.l.google.com
+209.85.145.86 orkut.com www.orkut.com orkut-fe.l.google.com
+209.85.145.87 orkut.com www.orkut.com orkut-fe.l.google.com
+209.85.225.85 orkut.com www.orkut.com orkut-fe.l.google.com
+209.85.225.86 orkut.com www.orkut.com orkut-fe.l.google.com
+209.85.225.87 orkut.com www.orkut.com orkut-fe.l.google.com
+209.85.225.191 blogspot.com blogger.com www.blogger.com blogger.l.google.com
+#
+# Social media
+72.247.244.88 reddit.com
+173.231.140.219 imgur.com
+208.80.152.201 wikipedia.org
+98.137.149.56 yahoo.com
+65.55.72.135 hotmail.com
+65.55.175.254 bing.com
+64.191.203.30 digg.com
+97.107.137.164 theonion.com
+65.39.178.43 hush.com
+216.239.113.172 gamespot.com
+69.10.25.46 ign.com
+98.124.248.77 cracked.com
+144.198.29.112 sidereel.com
+207.97.227.239 github.com
+#
+# Torrent sites
+194.71.107.15 thepiratebay.org
+80.94.76.5 mininova.com
+93.158.65.211 btjunkie.com
+62.149.24.66 demonoid.com
+62.149.24.67 demonoid.me
+#
+# Social networking
+69.171.224.11 facebook.com
+199.59.149.230 twitter.com
+174.121.194.34 tumblr.com
+209.200.154.225 livejournal.com
+69.174.244.50 dreamwidth.org
+#
+# Live Streaming Content
+67.201.54.151 stickam.com
+84.22.170.149 blogtv.com
+199.9.249.21 justin.tv
+184.173.141.231 chatroulette.com
+97.107.132.144 omegle.com
+208.94.146.80 own3d.tv
+174.140.154.32 megavideo.com
+#
+# Television
+178.17.165.74 gorillavid.com
+91.220.176.248 videoweed.com novamov.com
+208.223.219.206 tvlinks.com
+208.87.33.151 1channel.com
+#
+# Shopping
+72.21.211.176 amazon.com
+216.52.208.187 newegg.com
+209.31.22.39 frys.com
+#
+# File Sharing
+205.196.120.13 mediafire.com
+174.140.154.20 megaupload.com
+208.87.33.151 fileshare.com
+95.211.149.7 multiupload.com
+195.191.207.40 uploading.com
+31.7.57.13 warez-bb.org
+199.7.177.218 hotfile.com
+69.10.25.46 gamespy.com
+67.21.232.223 what.cd
+178.162.238.136 warez.ag
+89.238.130.247 putlocker.com
+95.211.143.200 uploaded.to
+199.47.217.179 dropbox.com
+69.65.13.216 pastebin.com
+#
+# Here’s a tip for the do-it-yourself crowd: Go to your computer's Start menu,
+# and either go to "run" or just search for "cmd." Open it up, and type in
+# "ping [hostname]" (or preferably "nslookup [hostname]") without quotes.
+#
+# To automatically create or update such a list, temporarily revert to the
+# default HOSTS file, without these special lines, and either whip up a shell
+# script using ping or nslookup or use CIP for Windows, available at this
+# address: http://www.softsea.com/review/CIP.html
+#
+# To make a large anti-SOPA HOSTS file more manageable, put hostnames sharing
+# the same IP address on the same line (Windows recognizes up to 9 per line),
+# as I have done for videoweed.com and novamov.com; also keep in mind that you
+# need to specifically list each individual hostname, like both google.com and
+# www.google.com (no wildcards allowed). In addition, you cannot specify
+# particular ports (like :8080 or :4444), protocols (like https: or ftp:), or
+# path components (anything after .com/.org/.tv, after the top-level domain).
+# Finally, in cases where a hostname has more than one IP, the IP addresses
+# must begin on adjacent lines (at least for Solaris); recording multiple IPs
+# allows for the same load-balancing that the multiple A records in the DNS
+# currently allow.
+#
+# Once you have the IP for a website, all you really need to do is enter it
+# like you would a normal URL and hit enter/press go. Typing in
+# "208.85.240.231" should bring you to the front page of AO3, for example, just
+# as typing "174.121.194.34/dashboard" should bring you straight to your Tumblr
+# dashboard. Since we’re obviously bracing for the worst case scenario which
+# would involve you not being able to access the internet regularly, you should
+# save this list.
+#
+# Consider also setting your DNS servers to BlockAid: http://www.blockaid.me/
+# BlockAid currently lets you get to domains seized by the DHS but will also
+# circumvent SOPA blocks; the first rule in this HOSTS list is for BlockAid's
+# special status page, and the nameserver IP addresses to use for your DNS
+# are 178.21.23.150 and...well the other one will come up again.
+#
+# This list is in the middle of a major overhaul, starting with Google sites.
