@@ -10,11 +10,11 @@ Although marketed to keep ads from annoying users, these extensions also allow f
 
 = Recommended Extensions =
 == Firefox (1.5+) ==
-[https://adblockplus.org/ Adblock Plus] is the original and best content-filtering implementation on any browser, capable of perfectly blocking content from being downloaded (even within plugins like Flash, so advertisements in videos can be blocked), with lists that can be automatically updated and include whitelists, ElementHiding, and a powerful and flexible syntax.
+[https://adblockplus.org/ Adblock Plus] is the original and best content-filtering implementation on any browser, capable of perfectly blocking content from being downloaded (even within plugins like Flash, so advertisements in videos can be blocked), with lists that can be automatically updated and include whitelists, ElementHiding, and a powerful and flexible syntax; consider also the [http://jessehakanen.net/adblockpluspopupaddon/ Adblock Plus Pop-Up Addon] by Jesse Hakanen if you are stuck with an older version of FireFox that Adblock Plus 2.0 does not support.
 
 == Chrome (4+) ==
-[https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™] (formerly Adthwart from Tom Joseph of the United States) is now superior to Michael Gundlach's [http://chromeadblock.com/ Adblock for Chrome] because it blocks just as much yet runs faster and uses less memory; Gundlach's extension now registers the abp: pseudo-protocol just like Adblock Plus for FireFox does, and Palant's extension may soon do that.
-An important limitation of Chrome itself is that extensions cannot modify plugin content, so most advertising inside Flash videos will still go through, but that isn't a serious security risk; notably Youtube ads can still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated.
+[https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™] (formerly Adthwart from Tom Joseph of the United States) is now superior to Michael Gundlach's [http://chromeadblock.com/ Adblock for Chrome] because it blocks just as much yet runs faster and uses less memory; both extensions now register the abp: pseudo-protocol, just like Adblock Plus for FireFox, but Gundlach did it first.
+An important limitation of Chrome itself (until the Web Request API) is that extensions cannot modify plugin content, so most advertising inside Flash videos will still go through, but that isn't a serious security risk; notably Youtube ads can still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated.
 However, with the upcoming Web Request API (experimental until Chrome 17), content-blocking in Chrome will be at parity with Safari and Firefox; if you have enabled experimental APIs in chrome://flags you can [https://adblockplus.org/devbuilds/adblockpluschrome-experimental/00latest.crx try it now].
 
 == Safari (5+) ==
@@ -47,6 +47,9 @@ However, for people using the currently recommended Fanboy Adblock list, no sepa
 
 Note that these lists merely block adult _advertisements_ and not adult websites; subscriptions likely exist, and filters can be created, to block most pornographic content, but the intention behind this whole project is to enhance security _without_ keeping you from doing what you want to do, even if that includes watching pornography.
 
+== Popup Blocking ==
+The creator of the [http://jessehakanen.net/adblockpluspopupaddon/ Adblock Plus Pop-Up Addon] has also created a small [https://popblock.googlecode.com/hg/popup-block.txt subscription] for blocking popups on certain websites; this list is still useful for the newest version of Adblock Plus for FireFox, which includes popup-blocking capability.
+
 == Chrome Workarounds ==
 These should already be pre-selected in whichever extension you chose, but just in case, you can directly access the workarounds created by [http://chromeadblock.com/filters/adblock_custom.txt Michael Gundlach], [http://adthwart.qux.us/filters/recommended.txt Tom Joseph], and [https://easylist-downloads.adblockplus.org/chrome_supplement.txt Wladimir Palant]; Joseph's workarounds are said to have been merged into the recommended general subscription, and Gundlach's list is recognized only by his own extensions, so you can copy it into the manual-filters section of his competitor, and for Adblock Plus on FireFox you can download that file, add the required line at the beginning, and just import it directly as a set of manual filters.
 
@@ -62,5 +65,7 @@ Note that this list does not block the main pages of these sites, so Facebook, T
 
 = Not Recommended =
 Easy List is too lenient toward first-party advertising, and the Adversity list is not associated with any language-related supplements and therefore is only useful for those browsing the Anglophone Web, so in general Fanboy Adblock is preferred, but they're not _terrible_ subscriptions; however, no other general-purpose subscription is recommended, in particular Adblock Rules, which is about to shut down and transfer all of its users to Easy List.
+
+Be sure to uncheck the box labeled "allow some non-intrusive advertising" even though what it allows does not slow down browsing much or introduce significant security threats; content should only be whitelisted to ensure usability, like if a Flash-based video-player refuses to work if the video ads are blocked.
 
 Also, I no longer recommend Simple Adblock for InternetExplorer; instead you should rely on an InPrivate Filtering list (IE8, Windows XP) or TrackingProtection List (IE9, Vista or later).
