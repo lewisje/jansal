@@ -61,4 +61,6 @@ Note that this list does not block the main pages of these sites, so Facebook, T
 [http://pgl.yoyo.org/as/serverlist.php?hostformat=adblockplus&showintro=0&mimetype=plaintext Peter Lowe's AdServers] or [http://pgl.yoyo.org/as/serverlist.php?hostformat=adblock&showintro=0&mimetype=plaintext this version for the old AdBlock] may seem a bit redundant if you use the HostsFile version, but this one does block sub-domains of the listed domains.
 
 = Not Recommended =
-I no longer recommend Simple Adblock for InternetExplorer; instead you should rely on an InPrivate Filtering list (IE8, Windows XP) or TrackingProtection List (IE9, Vista or later).
+Easy List is too lenient toward first-party advertising, and the Adversity list is not associated with any language-related supplements and therefore is only useful for those browsing the Anglophone Web, so in general Fanboy Adblock is preferred, but they're not _terrible_ subscriptions; however, no other general-purpose subscription is recommended, in particular Adblock Rules, which is about to shut down and transfer all of its users to Easy List.
+
+Also, I no longer recommend Simple Adblock for InternetExplorer; instead you should rely on an InPrivate Filtering list (IE8, Windows XP) or TrackingProtection List (IE9, Vista or later).
