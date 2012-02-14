@@ -1,0 +1,16 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"QueryIpMatching"=dword:00000001
+"NegativeCacheTime"=dword:00000000
+"NegativeSOACacheTime"=dword:00000000
+"CacheHashTableSize"=dword:fffffffb
+"CacheHashTableBucketSize"=dword:00000032
+"MaxCacheEntryTtlLimit"=dword:ffffffff
+"MaxSOACacheEntryTtlLimit"=dword:ffffffff
+"MaxCacheSize"=dword:ffffffff
+"MaxCacheTtl"=dword:ffffffff
+"MaxNegativeCacheTtl"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"QueryIpMatching"=dword:00000001
