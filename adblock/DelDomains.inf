@@ -1,0 +1,61 @@
+; DelDomains.inf © 11-28-04 | Revised 01-15-06
+; Created by: Mike Burgess  Microsoft MVP
+; http://winhelp2002.mvps.org/
+;
+; Warning: Deletes all entries in the Restricted & Trusted Zone list
+; http://winhelp2002.mvps.org/restricted.htm
+;
+; Revised to include the EscDomains key
+;
+; To execute this file: in Explorer - right-click (this file)
+; Select Install from the Menu.
+; Note: you will not see any onscreen action.
+
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+DelReg=DelTemps
+AddReg=AddTemps
+
+[DelTemps]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,"S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,"S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,"S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,"S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,"S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,"S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,"S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,"S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,"S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,".DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,".DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,".DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+
+; Recreate the keys to avoid a restart
+
+[AddTemps]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,"S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,"S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,"S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,"S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,"S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,"S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,"S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,"S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,"S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
+HKU,".DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains"
+HKU,".DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges"
+HKU,".DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains"
