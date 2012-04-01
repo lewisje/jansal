@@ -25,14 +25,16 @@ Use No Detour (similar to Link Peelr for GoogleChrome) to go past the layers of 
 
 Use Swiss Knife (similar to HTTPS-Everywhere for FireFox) to automatically use secure connections for sites that allow them, so that people who snoop on your connection (especially at public unsecured Wi-Fi) won't be able to steal your session cookies and impersonate you, especially now that a FireFox extension called Firesheep makes it so easy; also it allows you to open certain documents in an online viewer so that you don't need to risk something attacking your PDF or Office PlugIns (like Docs PDF/Powerpoint Viewer for GoogleChrome).
 Once Swiss Knife has been installed, you should ensure that "Automatic Redirect" and "Rewrite Links" are enabled (sadly you can't keep the button from appearing), and then choose Google Docs as your Provider for the Online viewer (Zoho doesn't work) with all supported formats except txt listed; finally, make the following exceptions for some sites that act up if continually redirected to HTTPS:
-  * `^http://www\.wikipedia\.org`
+  * `^http://(www|download)\.wikipedia\.org`
   * `^http://upload\.wikimedia\.org`
   * `^http://wikimediafoundation\.org/w`
   * `^http://(download|dumps)\.wikimedia\.org/`
-  * `^http://www\.facebook\.com/(plugins|settings)/`
-  * `^http://apps\.facebook\.com/`
+  * `apps\.facebook\.`
   * `tbs=shop`
   * `^http://www\.nytimes\.com/best-sellers-books/`
+  * `explore\.live\.`
+  * `washingtonpost|microsoft`
+  * `^https://encrypted\.google\.com/`
 
 As you will see, this browser may be the best, but it's not the easiest to handle; Opera, when used to its fullest, is best suited to power-users, and not people who prefer to "set it and forget it"
 
