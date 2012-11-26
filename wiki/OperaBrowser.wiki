@@ -17,7 +17,7 @@ This UrlFilter is a combination of what [https://secure.fanboy.co.nz/ Fanboy doe
 Use [https://secure.fanboy.co.nz/opera/fanboy-adblocklist-elements-v4.css the best element-hiding stylesheet ever] to perform rudimentary ElementHiding; put it somewhere, probably wherever the UrlFilter is, and let Opera know to use that as your custom stylesheet.
 
 = Extensions =
-Unfortunately Opera's extension support is still somewhat immature, but No Ads Advanced by Gemorroj will allow for filter-subscriptions to be made to the UrlFilter.
+Unfortunately Opera's extension support is still somewhat immature, but AdBlock Plus (former recommendation was No Ads Advanced by Gemorroj) will leverage the UrlFilter API.
 
 With that said, there are still some good extensions for security-minded folks...
 
