@@ -14,8 +14,8 @@ Although marketed to keep ads from annoying users, these extensions also allow f
 
 == Chrome (4+) ==
 [https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™] (formerly Adthwart from Tom Joseph of the United States) is now superior to Michael Gundlach's [http://chromeadblock.com/ Adblock for Chrome] because it blocks just as much yet runs faster and uses less memory; both extensions now register the abp: pseudo-protocol, just like Adblock Plus for FireFox, but Gundlach did it first.
-An important limitation of Chrome itself (until the Web Request API) is that extensions cannot modify plugin content, so most advertising inside Flash videos will still go through, but that isn't a serious security risk; notably Youtube ads can still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated.
-However, with the upcoming Web Request API (experimental until Chrome 17), content-blocking in Chrome will be at parity with Safari and Firefox; if you have enabled experimental APIs in chrome://flags you can [https://adblockplus.org/devbuilds/adblockpluschrome-experimental/00latest.crx try it now].
+An important limitation of Chrome itself (until the Web Request API) was that extensions could not modify plugin content, so most advertising inside Flash videos would still go through, but that isn't a serious security risk; notably Youtube ads could still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated (with the Web Request API stable, this is no longer treated as a special case).
+However, with the Web Request API (experimental until Chrome 17), content-blocking in Chrome is almost at parity with Firefox; if you want to see the latest enhancements from the ABP team you can [https://adblockplus.org/devbuilds/adblockpluschrome-experimental/00latest.crx try the experimental extension now].
 
 == Safari (5+) ==
 [http://safariadblock.com/ Adblock for Safari] is based on Adblock for Chrome and written by the same author shortly after extension support was added; this extension actually blocks content perfectly because Safari does not suffer from [https://code.google.com/p/chromium/issues/detail?id=35897 the subtle timing issue] that Chromium does.
@@ -25,7 +25,7 @@ There once were some cumbersome programs for the OS X version of AppleSafari, bu
 [http://simple-adblock.com/ Simple Adblock], which comes with hard-coded subscriptions and a limited ability to add filters manually to a particular text file, was once recommended but now is only for those willing to deal with FalsePositives and pay $29.95; unlike InPrivate Filtering, this works on IE6 and IE7 too, and it also allows for ElementHiding.
 
 == Opera (11.10+) ==
-No suitable extension currently exists for Adblock Plus-style lists; the most popular OperaBrowser extension, No Ads Advanced, instead uses subscriptions complying with the URL Filter API.
+The most popular OperaBrowser extension, No Ads Advanced, uses subscriptions complying with the URL Filter API, but the port of Adblock Plus is probably superior now.
 
 == SRWare Iron (3-16) ==
 [https://chrome.google.com/extensions/detail/chmimgmjdabgiilljdjfbonifbhiglao Adblock+ Element Hiding Helper], which uses only the ElementHiding rules and works in concert with AdblockIni, may clear some of the empty spaces left behind when content is blocked; however, with current versions of Iron, you should use the same extension as recommended for other Chromium-based browsers, Adblock Plus for Google Chrome, because of (experimental until version 17) support for the new Web Request API.
