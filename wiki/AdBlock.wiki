@@ -14,11 +14,13 @@ Although marketed to keep ads from annoying users, these extensions also allow f
 
 == Chrome (4+) ==
 [https://chrome.google.com/extensions/detail/cfhdojbkjhnklbpkdaibdccddilifddb Adblock Plus for Google Chrome™] (formerly Adthwart from Tom Joseph of the United States) is now superior to Michael Gundlach's [http://chromeadblock.com/ Adblock for Chrome] because it blocks just as much yet runs faster and uses less memory; both extensions now register the abp: pseudo-protocol, just like Adblock Plus for FireFox, but Gundlach did it first.
+
 An important limitation of Chrome itself (until the Web Request API) was that extensions could not modify plugin content, so most advertising inside Flash videos would still go through, but that isn't a serious security risk; notably Youtube ads could still be blocked, because they rely on Flash parameters within the HTML code, which can still be manipulated (with the Web Request API stable, this is no longer treated as a special case).
 However, with the Web Request API (experimental until Chrome 17), content-blocking in Chrome is almost at parity with Firefox; if you want to see the latest enhancements from the ABP team you can [https://adblockplus.org/devbuilds/adblockpluschrome-experimental/00latest.crx try the experimental extension now].
 
 == Safari (5+) ==
 [http://safariadblock.com/ Adblock for Safari] is based on Adblock for Chrome and written by the same author shortly after extension support was added; this extension actually blocks content perfectly because Safari does not suffer from [https://code.google.com/p/chromium/issues/detail?id=35897 the subtle timing issue] that Chromium does.
+
 There once were some cumbersome programs for the OS X version of AppleSafari, but they are no longer supported now that version 5 supports proper extensions; users of OS X Tiger and earlier (which do not support version 5) should search for sites that offer old software while they consider upgrading, possibly at substantial cost.
 
 == Internet Explorer (6+) ==
@@ -53,7 +55,7 @@ The creator of the [http://jessehakanen.net/adblockpluspopupaddon/ Adblock Plus 
 == Chrome Workarounds ==
 These should already be pre-selected in whichever extension you chose, but just in case, you can directly access the workarounds created by [http://chromeadblock.com/filters/adblock_custom.txt Michael Gundlach], [http://adthwart.qux.us/filters/recommended.txt Tom Joseph], and [https://easylist-downloads.adblockplus.org/chrome_supplement.txt Wladimir Palant]; Joseph's workarounds are said to have been merged into the recommended general subscription, and Gundlach's list is recognized only by his own extensions, so you can copy it into the manual-filters section of his competitor, and for Adblock Plus on FireFox you can download that file, add the required line at the beginning, and just import it directly as a set of manual filters.
 
-These lists have been pared down as Chrome's content-blocking ability has approached parity with that of Firefox, and when the Web Request API becomes stable in Chrome 17, they will likely be removed.
+These lists have been pared down as Chrome's content-blocking ability has approached parity with that of Firefox, and now that the Web Request API became stable in Chrome 17, it is _de minimis_.
 
 == Miscellaneous ==
 The [http://rickrolldb.com/ricklist.txt Rickroll Blacklist] will never give you up, let you down, run around and desert you, make you cry, say goodbye, or tell a lie and hurt you, and it doesn't need a terrible yet catchy video to say it.
