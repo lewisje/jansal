@@ -1,4 +1,5 @@
-#summary The only reason SRWare Iron is superior to other Chromium derivatives
+#summary The only reason SRWare Iron once was superior to other Chromium derivatives
+#labels Deprecated
 
 *This entire article is outdated now that Chrome 17 has shown up with the stable Web Request API.*
 
