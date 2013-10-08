@@ -1,4 +1,7 @@
 #summary The most secure browser by default, with the most features by default, is sadly harder to maintain added security for.
+#labels Deprecated
+
+_Unfortunately, Opera has ditched Presto and moved to a Chromium base, so now you should use the advice for GoogleChrome_
 
 = The Most Innovative Web Browser on Earth =
 Opera is my personal favorite: Even with built-in Bit Torrent, IRC, USENET, and e-mail clients (hence the name Opera _Internet_ Browser, not merely for browsing the Web) and Greasemonkey-style Userscript support, along with a fun-filled widget engine and unparalleled customization via .ini files for its skin, menus, toolbars, and nearly all other aspects of operation, even before extensions were available, it managed to be extraordinarily gentle on memory usage. More importantly, the browser itself has by far the lowest incidence and severity of public security vulnerabilities of all modern-day Web browsers, although this is less important than it sounds because most attacks these days target the PlugIns rather than the browser itself.
