@@ -2,7 +2,7 @@
 #labels Featured
 
 = Definition =
-False Positives (also known as [https://secure.wikimedia.org/wikipedia/en/wiki/Type_I_and_type_II_errors#Computers Type I errors]) are desirable objects unintentionally blocked or hidden by general rules intended to filter out undesirable content; conversely, false negatives (also known as [https://secure.wikimedia.org/wikipedia/en/wiki/Type_I_and_type_II_errors#Computers Type II errors]) are undesirable objects permitted to be downloaded, displayed, or run, slipping through the cracks in general rules designed to filter them out.
+False Positives (also known as [https://en.wikipedia.org/wiki/Type_I_and_type_II_errors#Computers Type I errors]) are desirable objects unintentionally blocked or hidden by general rules intended to filter out undesirable content; conversely, false negatives (also known as [https://en.wikipedia.org/wiki/Type_I_and_type_II_errors#Computers Type II errors]) are undesirable objects permitted to be downloaded, displayed, or run, slipping through the cracks in general rules designed to filter them out.
 
 = Significance =
 In some contexts, such as government or corporate secrets, the emphasis is on avoiding false negatives, while potentially making life difficult for a few users who actually are authorized to access them; similarly, some Information Technology departments use whitelisting of applications and websites and severely restrict what their users can do in order to avoid false negatives on their networks, with the side effect of severely degrading their Web-browsing experiences.
