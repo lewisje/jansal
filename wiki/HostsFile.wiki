@@ -4,9 +4,9 @@
 = History =
 At a fundamental level, all computers on a network using TCP/IP (upon which the Web, e-mail, FTP, IRC, and all other Internet services run) communicate with each other via their IP addresses, sets of numbers that are not easily remembered by people; when the proto-Internet (ARPANET and other small TCP/IP networks) was small, sysadmins across the world could easily maintain lists mapping easily-remembered domain names to IP addresses, but soon it became too unwieldy.
 
-Then in the early 1970s, most computers were set to fetch a file called [https://secure.wikimedia.org/wikipedia/en/wiki/Domain_Name_System#History HOSTS.TXT] from a computer at SRI that contained all domain mappings, but this computer and its network connections were quickly overwhelmed, and HOSTS.TXT became too large to efficiently parse whenever a user wished to connect to another computer.
+Then in the early 1970s, most computers were set to fetch a file called [https://en.wikipedia.org/wiki/Domain_Name_System#History HOSTS.TXT] from a computer at SRI that contained all domain mappings, but this computer and its network connections were quickly overwhelmed, and HOSTS.TXT became too large to efficiently parse whenever a user wished to connect to another computer.
 
-In 1983, the DNS (Domain Name System) was created as a distributed way to maintain mappings between domain names and IP addresses, but the old [https://secure.wikimedia.org/wikipedia/en/wiki/Hosts_(file) HOSTS file] lives on and is usually consulted before any DNS servers.
+In 1983, the DNS (Domain Name System) was created as a distributed way to maintain mappings between domain names and IP addresses, but the old [https://en.wikipedia.org/wiki/Hosts_(file) HOSTS file] lives on and is usually consulted before any DNS servers.
 
 == How to Find an IP Address ==
 Your computer probably maintains a temporary DNS cache so that programs seeking to connect to a domain name on the Internet will not need to constantly query the DNS servers; if the desired domain name is found there, your program will use that.
@@ -17,7 +17,7 @@ Then if you run a local ad-blocking proxy server (which I do not recommend, beca
 
 After that, if you are behind a router (and you should be, so that an attacker who knows your IP address will only be able to probe the router, rather than directly going for your computer), your router's DNS cache will be consulted.
 
-After that, the DNS servers for your ISP (or if you use one of the the top 6 alternative DNS services, including the newly IPv6-capable Open DNS, listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], which I recommend, except Clear Cloud, which will terminate on 1 September 2011, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
+After that, the DNS servers for your ISP (or if you use one of the the top 6 alternative DNS services, including the newly IPv6-capable Open DNS, listed in [http://www.avinashtech.com/internet/alternative-global-domain-system/ this guide], which I recommend, except Clear Cloud, which terminated in early 2012, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
 
 If necessary, the queries can go all of the way up to the DNS root servers, a set of 13 servers virtualized over dozens of computers around the world, which hold the authoritative domain name information for every website on the Internet that has registered a domain name (not all do); this very rarely happens, and when it does, your ISP or alternative DNS provider quickly caches the result and uses it for a long time.
 
