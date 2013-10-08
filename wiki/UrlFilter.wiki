@@ -1,4 +1,7 @@
 #summary The core of securing the Opera Internet Browser
+#labels Deprecated
+
+_Now that the OperaBrowser is based on the Blink engine that powers GoogleChrome, this is deprecated._
 
 = Introduction =
 In 2006, Opera introduced in version 9 of its browser a URL Filter File for use in Kiosk Mode, when OperaBrowser would be set full-screen and used in kiosks where not all websites would be desirable; then SpyBot and later [https://secure.fanboy.co.nz/ Fanboy] would see its utility as a content-blocker for ordinary users.
