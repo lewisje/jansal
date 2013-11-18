@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
+  <app appid="egcacegndbhkhbdfemcfenbalkagcjpp">
+    <updatecheck codebase="https://jansal.googlecode.com/svn/trunk/adblock/adblockpluschrome-experimental.crx?update" version="1.6.1.1023" prodversionmin="33.0"/>
+  </app>
+  <app appid="ipjkcdbalacncjdiancalcgfjcakolkj">
+    <updatecheck codebase="https://jansal.googlecode.com/svn/trunk/adblock/adblockforchrome-experimental.crx?update" version="2.6.14" prodversionmin="33.0"/>
+  </app>
+</gupdate>
