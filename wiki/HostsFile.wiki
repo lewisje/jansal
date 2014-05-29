@@ -47,8 +47,6 @@ You may have noticed that there are many domain names on each line, while if you
 
 If not using Windows, you may be able to whip up a cron job or just update manually; be sure that if you are using Linux, you look at the top lines of your current HOSTS file and ensure that they are added to the new one, or else you may temporarily lose your ability to access the Internet.
 
-This [http://adblock.mahakala.is/ HOSTS file by BSDGeek_Jake] is recommended for Android.
-
 Do not use an excessively large HOSTS file; the one I am providing is between 280KB and 400KB, depending on which version you use, and that is already pushing the limits. Be sure to disable the DNS Client service in Windows XP or earlier (run ipconfig /flushdns first) if you use either file, or else it will slow down your system re-parsing the large HOSTS file whenever any DNS information is updated and the DNS Cache needs to be re-built; this does mean that your ISP will take a little more of a hit, but it's not that much.
 
 == Advanced Recommendations ==
@@ -67,4 +65,4 @@ If you use these Recommendations, and you have set up Hosts Man to download the 
 You may also consider using [http://pgl.yoyo.org/as/#other Peter Lowe's Ad Servers] in conjunction with the DNS Cache on Windows via [http://pgl.yoyo.org/as/serverlist.php?hostformat=win32registry&showintro=0&mimetype=plaintext this Registry file].
 
 = Not Recommended =
-As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, and Malware Domain List are too large and full of FalsePositives.
+As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, Malware Domain List, and [http://adblock.mahakala.is/ BSDGeek_Jake's list] are too large and full of FalsePositives.
