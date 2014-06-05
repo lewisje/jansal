@@ -6,7 +6,7 @@ Microsoft Internet Explorer is by far the most widely used Web browser in the wo
 
 Unfortunately, ActiveX provides a massive attack vector, because the controls can be installed without even restarting the browser and have all of the privileges of the user, and in the old days they were commonly used in "browse and get owned" pages and still are used by some forms of malware, which install toolbars and other BHOs without the user's knowledge or consent; recent versions have enhanced the basic security of ActiveX, starting with the Add-Ons Manager and end to automatic ActiveX installation in IE6 SP2 and continuing with the Smart Screen Filter in IE8 and a feature in IE9 that prevents BHOs installed by external programs from automatically being enabled.
 
-Also, although Microsoft was once lax about security in its Web browser, it is now vigilant, with updated lists of ActiveX KillBits and security patches for all supported versions (IE6 SP3 and later, soon IE7 and later) released on a regular basis, along with its own Malware Removal Tool and a VirusScanner (Microsoft Security Essentials) that integrates with Internet Explorer.
+Also, although Microsoft was once lax about security in its Web browser, it is now vigilant, with updated lists of ActiveX KillBits and security patches for all supported versions (IE7 and later) released on a regular basis, along with its own Malware Removal Tool and a VirusScanner (Microsoft Security Essentials) that integrates with Internet Explorer.
 
 = Recommendations =
 == Privacy ==
