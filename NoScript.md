@@ -1,0 +1,39 @@
+# Introduction #
+An excellent way to speed your Web browsing and keep untrusted code from running, if such measures as AdBlock and the HostsFile don't already keep it away in the first place, is to manage permissions for scripts and PlugIns; however, no browser has an easy way to manage these permissions natively, preferring to use a clunky menu that must be referred to time and time again.
+
+However, FireFox, with its powerful and flexible extension system, seemed to be an excellent candidate for such an easy way, and on 13 May 2005, [Giorgio Maone](http://maone.net/) of Palermo, Italy, decided to release his masterwork, [NoScript](http://noscript.net/); at first focused entirely on blocking or allowing scripts, it evolved to manage permissions for PlugIns, downloadable Web fonts, iframes, and META redirections, along with an [Application Boundaries Enforcer](http://noscript.net/abe/) (ABE) and independent protections against [Cross-Site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) (XSS), [Cross-Site Request Forgery](https://en.wikipedia.org/wiki/XSRF) (XSRF), [Clickjacking](https://en.wikipedia.org/wiki/Clickjacking), [Web bugs](https://en.wikipedia.org/wiki/Web_bug), [Man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), and [DNS rebinding](https://en.wikipedia.org/wiki/DNS_Rebinding).
+
+# Recommendations #
+If using FireFox 4+, show the Add-on Bar; if using FireFox 24+, enable its built-in click-to-play and only do what is described below if you're sufficiently paranoid.
+
+Under NoScript Options, go to the Embeddings tab and uncheck "Forbid @font-face" and check "Apply these restrictions to trusted sites too" so that PlugIns are automatically blocked, but Web fonts are still permitted; the first time you click that yellow rectangle, uncheck the "Always ask for confirmation" box so that that weird dialog box will not appear again.
+
+In the Appearance tab, choose the icon, but not the label.
+
+In the Notifications tab, uncheck "Show message about blocked scripts" and "Display the release notes on updates" and also uncheck "Audio feedback when scripts are blocked" if not already unchecked.
+
+Under Advanced, go to Untrusted and forbid <a ping...>, Web bugs, META redirections inside NOSCRIPT elements, and XSLT; go to Trusted and allow everything. Check all options under XSS, JAR, ABE, and External Filters ([Blitzableiter](http://blitzableiter.recurity.com/) is an excellent resource), and then under HTTPS, choose "Never" under Behavior and check the box under Cookies.
+
+Now, to enable or disable scripts on a site or mark a site as Untrusted, mouse over or click (with either button) the S icon; if it has a big NO symbol, all scripts are blocked; if a small one, some scripts; if an orange puzzle piece, some PlugIns; if a small exclamation mark, nothing blocked on that page and all scripts allowed by default; if just a blue S, nothing is blocked; if a white S without the white background, content has yet to be loaded.
+
+Then you can enable scripts permanently or temporarily (until a browser restart) for any site from which scripts came, revoke temporary permissions, disable scripts from sites previously enabled, mark sites as Untrusted (worse than merely disabled), and manage permissions for Blocked Objects.
+
+I recommend allowing only the site you are actually on, and any third-party sites necessary for it to actually work (like yahooapis.com, googleapis.com, or any domain resembling the main one and containing "cdn" for [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network)), while keeping away advertising, analytics, and anything suspicious; eventually you will train the extension to let in code from the sites you want while halting any sites you don't.
+
+If that is a bit too much trouble, go ahead and Allow Scripts Globally (dangerous); many of the other protections will continue to run, most importantly an end to auto-launching of PlugIns.
+
+# Other Browsers #
+OperaBrowser 12.16 and earlier has an interesting Userscript to block [External Scripts](http://files.myopera.com/BS-Harou/files/extscripts.js) ([the extension](https://addons.opera.com/addons/extensions/details/external-scripts/1.1/?display=en) is not quite working) and a [button](http://my.opera.com/BS-Harou/blog/2010/07/30/userjs-external-scripts-v1-1#comment39829732) to put on the toolbar for easier access; more importantly, Ruzanow has created an excellent Userscript to [block all plugins](http://ruzanow.ru/userjs/allblock.js) by replacing them with a transparent rectangle with a shiny Play button; I have had trouble with the native click-to-play in OperaBrowser when loading PDFs or other content taking up the entire tab, so I still prefer this.
+
+GoogleChrome has a decent extension called [ScriptSafe](https://chrome.google.com/webstore/detail/scriptsafe/oiigbmnaadbkfbmpbfijlflahbdbdgdf) for blocking most scripts from loading, but the most important thing to do is already built-in: Enable click-to-play, and then PlugIns will not auto-load, instead waiting for you to click a grey rectangle.
+
+AppleSafari also supports [Ghostery](http://www.ghostery.com/download) and it is recommended there too, but more important is [Plugin Blocker](http://combsconnections.tk/extensions/), which will block PlugIns from loading until a blue rectangle is clicked; for older versions of Safari that don't support extensions (Tiger and earlier versions of OS X cannot run Safari 5+), get [ClickToFlash](http://clicktoflash.com/).
+
+InternetExplorer also supports [Ghostery](http://www.ghostery.com/download) but it is more difficult to use and may have more FalsePositives; unfortunately there is no easy way to keep PlugIns from auto-loading, and the closest thing to a script manager is [Trust Setter](http://www.jasons-toolbox.com/programs.asp?Program=Trust%20Setter), which only allows you to put the main site you're on into Trusted or Restricted Sites, not any third-party content, and even then it requires an increase in the security level of the Internet zone and lacks even a semblance of the fine-grained control of Maone's creation. Even though InternetExplorer has supported extensions in the form of [Browser Helper Objects](https://en.wikipedia.org/wiki/Browser_Helper_Object) (BHOs) since October 1997, when Opera Software still charged for its OperaBrowser, Netscape was still relevant, and FireFox, AppleSafari, and GoogleChrome did not yet exist, nobody has made an effective script-manager for the browser, and only recently did a decent AdBlock implementation arrive; that may be saying something about the architecture of the browser.
+
+# Not Recommended #
+[Ghostery](http://www.ghostery.com/download) is redundant everywhere, so don't install it; also, [RequestPolicy](https://www.requestpolicy.com/faq) may be overkill in FireFox because you will already have plenty of XSRF protection with No Script.
+
+GoogleChrome has a rather clunky extension by Eric Wong called [NotScripts](http://optimalcycling.com/other-projects/notscripts/) that makes use of HTML5 Local Storage but requires a password to be set in a Javascript file inside the extension directory, after which the browser must be restarted for the extension to be effective; this password must be re-set every single time the extension is updated, and this is a major pain, and additionally the blocking/unblocking interface doesn't always load well.
+
+You should not block @font-face, because Web fonts are necessary for the appearance of many modern websites.

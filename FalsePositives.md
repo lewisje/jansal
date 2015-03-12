@@ -1,0 +1,32 @@
+# Definition #
+False Positives (also known as [Type I errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors#Computers)) are desirable objects unintentionally blocked or hidden by general rules intended to filter out undesirable content; conversely, false negatives (also known as [Type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors#Computers)) are undesirable objects permitted to be downloaded, displayed, or run, slipping through the cracks in general rules designed to filter them out.
+
+# Significance #
+In some contexts, such as government or corporate secrets, the emphasis is on avoiding false negatives, while potentially making life difficult for a few users who actually are authorized to access them; similarly, some Information Technology departments use whitelisting of applications and websites and severely restrict what their users can do in order to avoid false negatives on their networks, with the side effect of severely degrading their Web-browsing experiences.
+
+This wiki instead advocates avoiding false positives, by blocking the most common vectors of malware distribution without keeping users from doing normal activities they want to do, even though it may be unproductive or immoral; if something excessively hampers usability or blocks important and legitimate websites, it will not be recommended here, even though it may enhance security.
+
+# Notable Techniques with Excessive False Positives #
+Version 3 of Fanboy's special ElementHiding user stylesheet for OperaBrowser, when used in InternetExplorer, ends up hiding the Facebook homepage because of the variance from Web standards in its layout engine; I previously advocated [an alternate stylesheet](https://jansal.googlecode.com/svn/trunk/adblock/userContent.css) for some ElementHiding, but I noticed a false positive keeping the Chatterbox from loading on The Wolf Web, and now Version 4 of Fanboy's stylesheet works just fine for both of those cases.
+
+Also, both Simple AdBlock (which has since started charging money) and the method to automate InPrivate Filtering lists suffer from notable false positives and so are no longer recommended.
+
+Additionally, [the more aggressive list](http://www.privacychoice.org/trackerblock/all_companies) from Privacy Choice suffers from severe false positives, keeping people from logging into AOL or Yahoo!
+
+Like the unintelligent conversion of Easy List to InPrivate Filtering format but worse, the unintelligent conversion of the recommended UrlFilter from OperaBrowser into AdblockIni format for SRWare Iron suffers from false positives so terrible that they keep the browser from starting up.
+
+Ad Sweep, in all of its forms (whether userscript or extension), is merely a way to use Javascript rather than CSS to effect rudimentary ElementHiding; not only is it not good at it, but it creates some frustrating false positives, like hiding the Chatbox on The Wolf Web.
+
+Stop Autoplay on FireFox has a terrible false positive in blocking the plugin required for IE Tab + to work.
+
+I have not found an ad- or malware-blocking HostsFile other than Peter Lowe's without its share of false positives; MVPs, hpHosts, and Malware Domain List end up blocking such ordinary sites as Megaupload, Rapidshare, Filefactory, and even Sourceforge, which are sometimes used to upload malware but do not attempt to use vulnerabilities in browsers or PlugIns to send it to unwitting users. Also, an excessively large HostsFile will by itself slow down your Web browsing; the full hpHosts list by itself is too large, and no amount of optimization via Hosts Man will alleviate the excess.
+
+However, [Peter Lowe's Ad Servers](http://pgl.yoyo.org/as/iplist.php?ipformat=peerblock&showintro=0&mimetype=plaintext) has numerous false positives as a PeerBlock list, as do the [Web Exploits](http://list.iblocklist.com/lists/bluetack/web-exploit) and [Bad Peers](http://list.iblocklist.com/lists/bluetack/bad-peers) lists and all the built-in lists, even Advertising and Spyware; apparently [Bogon](http://list.iblocklist.com/lists/bluetack/bogon) from Bluetack blocks 244.0.0.252, the address used for Link-Local Multicast Name Resolution (LLMNR) on IPv4, while the [list by Atma](http://list.iblocklist.com/lists/atma/atma) blacklists the Border Gateway Protocol (BGP) address used by well-known IPv6 tunnel-broker Hurricane Electric (bgp.he.net).
+
+Kingsoft is notorious for its high [rate of false positives](https://docs.google.com/viewer?url=http://av-comparatives.org/images/stories/test/ondret/avc_od_aug2010.pdf), but all other vendors of virus-scanners have notable incidents; Microsoft Security Essentials has the lowest rate among free scanners, avast! also has a low rate, and you should ensure that your VirusScanner does not regularly mark core Windows system files as malicious.
+
+The old recommendation to have InPrivate Filtering automatically start in mode 1 (Automatic) rather than 2 (Let me decide) caused InternetExplorer to build up a slew of false positives after browsing enough domains that used such widespread and fundamental Javascript frameworks as jQuery, Mootools, and YUI, eventually breaking a large portion of the Web.
+
+Do not use the more aggressive TrackingProtection List offered by Privacy Choice, for the same reason as with the aforementioned cookie-policy XML file; notably you should also stay away from the TRUSTe list because of its false _negatives_.
+
+The Website Blocking feature of the Protection Module of the paid version of Malwarebytes blocks 7chan and has some other notable false positives, so it is no longer recommended.

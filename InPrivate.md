@@ -1,0 +1,22 @@
+# An Innovation in Internet Explorer 8 #
+For InternetExplorer 8, Microsoft created a new private browsing mode, and shortly after its announcement in Beta 2 on 27 August 2008, the other browser vendors came out with their own implementations, including Incognito in the first public release of GoogleChrome.
+
+Approximately one year after its release date, in early 2010, people noticed that just as the HostsFile can be turned to a good use contrary to its original intent, so can the new filtering mode of IE8, which is an improvement over using the Restricted Sites zone as had been done since IE4.
+
+## History ##
+Originally [the idea was](http://fanboy.co.nz/adblock/forums/viewtopic.php?f=6&t=319&p=10498#p10498) to convert the AdBlock list created by [Fanboy](https://secure.fanboy.co.nz/) for SRWareIron into an XML file to be imported manually, after the previous filters were manually deleted; now [a script has been created](http://forums.overclockers.co.uk/showpost.php?p=17984832&postcount=51) to download [Easylist without the Element Hiding filters](https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt) and make a Registry update file, and it is possible to use this to directly update the list of active filters. The script can be set to run automatically in Vista and later versions of Windows, so that the filters will be up-to-date.
+
+Unfortunately that proved to be laden with false positives, so an even better solution needed to be devised, and it came from the loving hands of [Quero Toolbar](http://www.quero.at/) author [Viktor Krammer](http://www.virtualnet.at/hobbies/index.htm): a more intelligently translated [version of EasyList](http://www.quero.at/adblock_ie_xml.php) that takes up much less space.
+
+# Directions #
+Download [my modified MakeFilters package](http://jansal.googlecode.com/svn/trunk/adblock/MakeFilter.zip) and extract its contents; then put the mf directory in the C:\ directory.
+
+Double-click the included .reg file to enable the filters in both IE8 and IE9 Beta; mode 2 (let me decide) is used instead of the originally-recommended mode 1 (automatically block) because mode 1 would pick up any content shared among multiple domains (the exact threshold is set by the user, between 3 and 30) and add it to the filter list, eventually breaking sites relying on such important frameworks as jQuery, Mootools, and YUI.
+Use mode 0 with [this .reg file](http://jansal.googlecode.com/svn/trunk/adblock/DisableInPrivate.reg) in case you no longer want the filtering to turn on by default.
+
+Download [this XML file](http://www.quero.at/download/adblock_ie.xml), go to Manage Add-Ons from either the Internet Explorer toolbar or from the Programs tab of Internet Options, delete any filters that may already be there, and Import that XML file; also consider downloading and installing [this XML file from Peter Lowe](http://pgl.yoyo.org/as/serverlist.php?hostformat=ie8-private-xml&showintro=0&mimetype=plaintext).
+
+# Closing Remarks #
+This technique once was deprecated in favor of Simple AdBlock, because it did allow the use of ElementHiding filters and supports more filters, with a more powerful syntax, than this method (notably, if too many filters are added to the IE8 filtering mode, it will stop working, the usual user interface for adding or removing filters will not work, and you will need to use the Registry to directly remove the filters, and Simple AdBlock suffers from none of these issues), and it also works in IE6 and IE7; but both this and the aforementioned method for automating filter updates suffers from numerous FalsePositives, and furthermore the developer of Simple AdBlock has released a paid version, crippling the free version so that only up to 100 ad-requests per day are actually blocked.
+
+I now prefer the solution devised by [Miss Viki](http://missviki.at/) for Windows XP users, who will never be able to upgrade to IE9+ to enjoy TrackingProtection Lists.

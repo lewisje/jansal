@@ -1,0 +1,52 @@
+_Unfortunately, Opera has ditched Presto and moved to a Chromium base, so now you should use the advice for GoogleChrome_
+
+# The Most Innovative Web Browser on Earth #
+Opera is my personal favorite: Even with built-in Bit Torrent, IRC, USENET, and e-mail clients (hence the name Opera _Internet_ Browser, not merely for browsing the Web) and Greasemonkey-style Userscript support, along with a fun-filled widget engine and unparalleled customization via .ini files for its skin, menus, toolbars, and nearly all other aspects of operation, even before extensions were available, it managed to be extraordinarily gentle on memory usage. More importantly, the browser itself has by far the lowest incidence and severity of public security vulnerabilities of all modern-day Web browsers, although this is less important than it sounds because most attacks these days target the PlugIns rather than the browser itself.
+
+Opera has also been innovative in the use of a special browser script to work around websites that don't quite work in Opera or (more rarely now) even try to shut it out, in the adoption of Web standards (although AppleSafari and GoogleChrome are stealing some of its thunder), and since version 9 in 2006 (a few months after version 8.5 was the first to be released for free and free of ads) in the use of a content-blocking mechanism, UrlFilter, basically built-in AdBlock! (Unfortunately UrlFilter cannot be updated via subscription.)
+
+Now that Opera has Unite and Extensions, its memory usage has gotten worse, but some extensions bring functionality that has long been desired, while others duplicate long-existing Userscripts but bring with them the ability to auto-update, which Userscripts cannot do.
+
+# Recommendations #
+Make a Userscript directory (Opera does not set one by default); try putting it inside your program directory or your profile.
+Then go to http://jansal.net/opera/ and put all of the scripts from the salr directory in your Userscript directory (the name came about because the first Userscripts I ever used were based on a now-obsolete port of the Something Awful Last Read extension for FireFox), especially allblock.js, which reliably blocks all PlugIns (be sure to set `opera:config#UserPrefs|UserJavaScriptonHTTPS` to True and you get just one warning per browser session, and also press Ctrl+Shift+F to enable all PlugIns on a particular page).
+
+Also, download [my special urlfilter.ini](https://jansal.googlecode.com/svn/trunk/adblock/urlfilter.ini) for versions of Opera before 11.10 and put it somewhere, then make a blank file called "opera6.ini" (so that SpyBot can detect it) and go into your Preferences to make Opera know where to find its UrlFilter (for current versions, just let SpyBot do its immunization normally and use Opera Adblock for all other sources of filter-lists).
+This UrlFilter is a combination of what [Fanboy does](https://secure.fanboy.co.nz/) and the immunizations that SpyBot has made ever since Opera introduced UrlFilter in version 9.
+
+Use [the best element-hiding stylesheet ever](https://secure.fanboy.co.nz/opera/fanboy-adblocklist-elements-v4.css) to perform rudimentary ElementHiding; put it somewhere, probably wherever the UrlFilter is, and let Opera know to use that as your custom stylesheet.
+
+# Extensions #
+Unfortunately Opera's extension support is still somewhat immature, but AdBlock Plus (former recommendation was No Ads Advanced by Gemorroj) will leverage the UrlFilter API.
+
+With that said, there are still some good extensions for security-minded folks...
+
+Use No Detour (similar to Link Peelr for GoogleChrome) to go past the layers of redirection (often through ad-sites) used to disguise some links and get straight to your final destination; use Unshorten (more similar to Link Peelr) to easily see where those link-shorteners are taking you.
+
+Use Swiss Knife (similar to HTTPS-Everywhere for FireFox) to automatically use secure connections for sites that allow them, so that people who snoop on your connection (especially at public unsecured Wi-Fi) won't be able to steal your session cookies and impersonate you, especially now that a FireFox extension called Firesheep makes it so easy; also it allows you to open certain documents in an online viewer so that you don't need to risk something attacking your PDF or Office PlugIns (like Docs PDF/Powerpoint Viewer for GoogleChrome).
+Once Swiss Knife has been installed, you should ensure that "Automatic Redirect" and "Rewrite Links" are enabled (sadly you can't keep the button from appearing), and then choose Google Docs as your Provider for the Online viewer (Zoho doesn't work) with all supported formats except txt listed; finally, make the following exceptions for some sites that act up if continually redirected to HTTPS:
+  * `^http://(www|download)\.wikipedia\.org`
+  * `^http://upload\.wikimedia\.org`
+  * `^http://wikimediafoundation\.org/w`
+  * `^http://(download|dumps)\.wikimedia\.org/`
+  * `apps\.facebook\.`
+  * `tbs=shop`
+  * `^http://www\.nytimes\.com/best-sellers-books/`
+  * `explore\.live\.`
+  * `washingtonpost|microsoft`
+  * `^https://encrypted\.google\.com/`
+
+As you will see, this browser may be the best, but it's not the easiest to handle; Opera, when used to its fullest, is best suited to power-users, and not people who prefer to "set it and forget it"
+
+Finally, both Virus Total and WOT now make extensions for Opera; use them to respectively send suspicious files to be tested for malware and to get a quick check on the reputation of a website, but they aren't quite as recommended as the previous three extensions.
+
+For enhanced usability, consider Gmail Compose (so you use Gmail rather than launching an external client, or Opera's built-in client if you don't use it, on clicking mailto: links) Binfix (so you're less likely to get gibberish filling your screen when you meant to _download_ that RAR file), Gcache (easy access to the Google Cache), Wayback Machine, Mini Wikipedia, Mini Wolfram Alpha, Translator (similar to the built-in functionality in GoogleChrome) Youtube Downloader, Opera Internal Pages, and Opera Configurator (easy access to your Preferences, without needing to leave your current tab).
+
+# Not Recommended #
+Do not use any other extension that claims to block or hide ads; it will be inefficient at best and harmful at worst, and in particular Adsweep (both extension and Userscript) has harmful FalsePositives. Just use UrlFilter, but keep in mind that my special file will now be updated only infrequently, now that Opera 11.10 and greater have decent extensions in AdBlock Plus and No Ads Advanced that make use of the URL Filter API.
+Additionally, my formerly recommended extension Opera Adblock by Leomajko has been found to have serious performance problems and is no longer maintained, so I have stopped promoting it.
+
+I cannot yet recommend any script-blocker; External Scripts is too fine-grained to be easily trained as No Script is, while the Opera version of Not Scripts is more unstable than the version for GoogleChrome, even though its feature-set is nicer and it doesn't require digging inside the extension directory to set a password within a .js file for encryption of HTML5 Local Storage just to get the extension to work. At any rate, there is a perfectly-good blocker for auto-launching of PlugIns, so just use that.
+
+Do not install too many extensions, or else Opera may have difficulty loading; you will know when all of a sudden you're unable to load any websites in Opera even though they still load in InternetExplorer. The extension system is still fragile, and even though Opera extensions (as for GoogleChrome and AppleSafari) are rather limited in their abilities, Opera still becomes unstable with about a tenth of the extension-load that makes FireFox poorly responsive.
+Luckily Opera does have an option to start without the relative memory-hogs of Unite and Extensions (much like FireFox in its own Safe Mode, or InternetExplorer started with no Add-Ons) so that the greater offenders may be discovered and summarily removed.

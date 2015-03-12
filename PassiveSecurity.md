@@ -1,0 +1,49 @@
+# Introduction to Security via Passive Blocking #
+
+You may well know that you should have one VirusScanner on your computer (that also scans for other malware), especially if it is a Windows PC, and that you should have a properly-configured software firewall and a router that hides your machine somewhat with NAT, but if a cybercriminal manages to find some zero-day exploit in your browser or a plugin to deliver malware that your scanner's signatures haven't caught yet, you could be in trouble, as when [the Nobel Peace Prize website was hacked into](https://krebsonsecurity.com/2010/10/nobel-peace-prize-site-serves-firefox-0day/) to deliver malware to users running even the then-latest version of FireFox 3.6! Cybercriminals around the world are using [VirusTotal](https://www.virustotal.com/) (which offers excellent extensions for FireFox and GoogleChrome) and even [their own underground batteries of scanners](http://threatpost.com/en_us/blogs/siberia-exploit-kit-offers-service-evade-anti-malware-software-120110) to ensure that their exploits will not be detected, at least for a day or so, while innocent Web surfers are at risk of becoming infected.
+
+You should do what you can to block the most common vectors of malware to give your VirusScanner a break, to speed up your Web browsing, and incidentally to make Web pages appear cleaner; the measures explained in the remaining Wiki pages can be taken in any combination and they work in layers.
+
+I also intend to let you know what I have found to be more trouble than it's worth, especially if a particular passive-blocking method is too prone to FalsePositives.
+
+## A Note About Ad-Blocking and Malvertising ##
+
+Malvertising is advertising that delivers malware, either because an advertiser has been hacked into and then its ads (embedded randomly into sites around the world) start delivering malicious payloads or because a cybercriminal has tricked an ad network into running a malicious ad.
+
+Extensions like AdBlock Plus and features like InPrivate Filtering or TrackingProtection Lists and OperaBrowser's UrlFilter are advertised as ways to keep Web annoyances away or prevent advertisers from invading your privacy with tracking scripts and Web bugs, but more importantly they can be used to block content from _any_ URL, whether merely annoying, subject to hijacking by a malvertiser, or even a known source of malware.
+
+## Script and Plugin Blocking ##
+
+Only one mainstream browser, FireFox, has a decent way to manage script permissions (the NoScript extension), while all but InternetExplorer have something more important: a granular way to keep PlugIns from automatically launching.
+
+This is important, because [a substantial portion of attempts by malicious websites to infect your computer actually use your PlugIns](https://krebsonsecurity.com/2010/05/revisiting-the-eleonore-exploit-kit/), because they are cross-platform and cross-browser, tend to have more vulnerabilities, and aren't updated as often as browsers; the most-targeted PlugIns are Adobe Flash, Java, and Adobe Reader, which are also among the most useful. Be sure to keep your PlugIns updated; [Mozilla Plugin Check](https://www.mozilla.com/en-US/plugincheck/) will help the most (it works best on FireFox 3.6 and worst in InternetExplorer, but it works everywhere), while [SecBrowsing](https://secbrowsing.appspot.com/) looks at fewer PlugIns but is updated more quickly and comes with a handy extension for GoogleChrome to check for outdated PlugIns in real-time.
+
+It may be a bit annoying to train NoScript to only allow the scripts you want, or to have to click a grey, yellow, or clear box to watch a Youtube video, but it pales in comparison to having unwanted Flash content loading up whenever you browse a webpage, or watching in horror as seemingly-blank PDFs [laden with malware](http://threatpost.com/en_us/blogs/pdf-malware-using-new-attack-technique-042810) pop up out of nowhere.
+
+## ActiveX Killbits ##
+
+KillBits are Registry entries that let Microsoft Windows know that certain ActiveX controls should not be installed, or if installed, should not be run; Microsoft provides its own list, and SpyBot and SpywareBlaster provide plenty more. This measure is mostly effective after malware makes it onto your system, to mitigate its effect; however it should be deployed _before_ infection. KillBits affect InternetExplorer, Microsoft Office, Windows Media Player, and any other Microsoft product that makes use of ActiveX controls.
+
+## DNS Trickery ##
+
+On the easy side, you can use a large ad- and malware-blocking HostsFile; on the hard side, you can use a small one in combination with your router's DNS system to make the blocking more effective, broader, and faster. Then on the flip side, you can use a program like PeerBlock to directly block lists of IP addresses, which cannot be blocked via a HostsFile or the combination of your router's dnsmasq program and pixelserv.
+
+As an additional layer of security, use an alternate DNS provider either in your router or (if you do not use one or cannot set its DNS settings) on your computer; I recommend the top 6 listed in [this guide](http://www.avinashtech.com/internet/alternative-global-domain-system/), and you should use Clearcloud, Comodo, Norton, DNS Advantage, Open DNS, and Google, in that order (the Advanced settings of Windows DNS settings will let you put in all 12 IP addresses).
+
+## Hiding Elements and Blocking Tracking Cookies ##
+
+The AdBlock-style extensions for FireFox, GoogleChrome, and AppleSafari support ElementHiding rules in their filter lists, while all major browsers support a custom user stylesheet (commonly intended for accessibility reasons), which can be used to hide elements and collapse the gaps left behind when third-party advertising is blocked; unfortunately [the most-recommended stylesheet](https://fanboy-adblock-list.googlecode.com/hg/opera/fanboy-adblocklist-elements-v3.css) doesn't work well in InternetExplorer, for which [this stylesheet](https://jansal.googlecode.com/svn/trunk/adblock/userContent.css) should be used.
+
+Also, SpyBot blocks some of the more undesirable cookies in OperaBrowser, FireFox, and InternetExplorer, while SpywareBlaster blocks a lot more (but not in OperaBrowser), and Privacy Choice even offers a list that can be directly imported into InternetExplorer.
+
+The only real security implications are that element hiding can be used to keep people from unintentionally clicking certain links, and that a new feature in InternetExplorer 9 called Tracking Protection Lists could possibly be used as a more general content-blocking method akin to AdBlock, much as InPrivate Filtering has been; generally element hiding is for aesthetics and cookie blocking is for privacy, but the information gathered about you in tracking cookies does not help cybercriminals deliver malware to your computer, rather it helps advertisers build a profile of you, which has [its own worrying implications](http://online.wsj.com/article/SB10001424052748703294904575385532109190198.html) unrelated to computer security.
+
+# Comparison with Active Blocking #
+
+Filtering proxies like Polipo, Privoxy, and The Proxomitron are external programs that look at all network traffic and can do anything at all to it; they are a bit difficult to set up, prone to FalsePositives, and demanding of system resources.
+
+Your own resident VirusScanner may come with a module to protect against malicious webpages, and so do the paid version of Malwarebytes' Anti-Malware (which is not a virus scanner) and the free Browser Guard application by Trend Micro (specifically targeted at malicious Javascript in InternetExplorer, in lieu of an actual analogue to NoScript); they are external programs that slow down your computer a bit, and usage of them is questionable (I have personally noticed a couple FalsePositives in the Website Blocking in Malwarebytes, like 7chan and Oron).
+
+Applications that merely update blocking lists are not regarded as "active" even though they may run on an automatic basis; for this reason I do not think of PeerBlock or Hosts Man as active-blocking applications, and SpyBot, if configured properly, is also completely passive.
+
+If you are worried about an outsider specifically targeting your particular network, you may wish to invest in an intrusion-detection system, but that is outside the scope of this wiki; the only active security application you should be using are a VirusScanner, like Microsoft Security Essentials for Windows, Sophos for OS X, or ClamAV for Linux, and a FireWall, like the Windows built-in FireWall or [Comodo](http://www.comodo.com/home/internet-security/firewall.php) if stronger outbound filtering is desired.

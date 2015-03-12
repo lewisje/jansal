@@ -1,0 +1,12 @@
+**This entire article is outdated now that Chrome 17 has shown up with the stable Web Request API.**
+
+# Introduction #
+Among the innovations from SRWare when it released its Iron derivative of Chromium (the open-source project behind GoogleChrome) was a functioning AdBlock system (based on UrlFilter from OperaBrowser albeit inferior to it), even long before extensions became available, and still [better than any Chrome extension can currently be](https://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Does_this_actually_prevent_ads_from_downloading?) at keeping content from downloading; it is this feature alone that keeps me using this fast-loading browser as my "default" (meaning the one used when some other program launches a URL) instead of GoogleChrome.
+
+When you install or re-install SRWare Iron, you will find in the program directory a file called "adblock.ini" that looks empty; this file is actually required for the browser to launch and cannot be modified in any way while it is running.
+
+# Recommendations #
+If you don't want to just use [my adblock.ini](https://jansal.googlecode.com/svn/trunk/adblock/adblock.ini), instead download [my URL Filter File for Opera](https://jansal.googlecode.com/svn/trunk/adblock/urlfilter.ini) or make your own UrlFilter, and then remove the header lines, strip out the asterisks from the beginnings and ends of filters (because [wildcards are not supported](https://fanboy-adblock-list.googlecode.com/hg/docs/filter-additions.txt)), intelligently remove either the portion before or the portion after any asterisk inside a filter, remove filters that end up being too general, run them through [the duplicate-line remover](http://textop.us/Lines-tools/Delete-Duplicate-Lines) and then the useless-filters finder as in the UrlFilter article, and hope it ends up working; there is no good way to automate the process that is free of FalsePositives or bugs that prevent the browser from loading.
+
+# Not Recommended #
+Do not use either Gundlach's or Palant's AdBlock extension, or else you might as well be using plain GoogleChrome; however I do recommend the [Adblock+ Element Hiding Helper](https://chrome.google.com/extensions/detail/chmimgmjdabgiilljdjfbonifbhiglao) for some ElementHiding rules (the other two extensions do that better, but again, they are only for _other_ derivatives of Chromium).

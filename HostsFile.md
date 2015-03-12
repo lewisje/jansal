@@ -1,0 +1,65 @@
+# History #
+At a fundamental level, all computers on a network using TCP/IP (upon which the Web, e-mail, FTP, IRC, and all other Internet services run) communicate with each other via their IP addresses, sets of numbers that are not easily remembered by people; when the proto-Internet (ARPANET and other small TCP/IP networks) was small, sysadmins across the world could easily maintain lists mapping easily-remembered domain names to IP addresses, but soon it became too unwieldy.
+
+Then in the early 1970s, most computers were set to fetch a file called [HOSTS.TXT](https://en.wikipedia.org/wiki/Domain_Name_System#History) from a computer at SRI that contained all domain mappings, but this computer and its network connections were quickly overwhelmed, and HOSTS.TXT became too large to efficiently parse whenever a user wished to connect to another computer.
+
+In 1983, the DNS (Domain Name System) was created as a distributed way to maintain mappings between domain names and IP addresses, but the old [HOSTS file](https://en.wikipedia.org/wiki/Hosts_(file)) lives on and is usually consulted before any DNS servers.
+
+## How to Find an IP Address ##
+Your computer probably maintains a temporary DNS cache so that programs seeking to connect to a domain name on the Internet will not need to constantly query the DNS servers; if the desired domain name is found there, your program will use that.
+
+Next, it looks in the HOSTS file, which on most computers has only the loopback configuration lines "127.0.0.1 localhost" and "::1 localhost" and may also have other standard configurations, like "255.255.255.255 broadcasthost" (Mac OS X) and a mapping between your IP address and your computer's name (Linux), but probably not information about ordinary domain names; notably, in Windows 7, not even the localhost lines are there, for all of this configuration is hard-coded into the DNS client.
+
+Then if you run a local ad-blocking proxy server (which I do not recommend, because it is troublesome and resource-intensive), that is consulted.
+
+After that, if you are behind a router (and you should be, so that an attacker who knows your IP address will only be able to probe the router, rather than directly going for your computer), your router's DNS cache will be consulted.
+
+After that, the DNS servers for your ISP (or if you use one of the the top 6 alternative DNS services, including the newly IPv6-capable Open DNS, listed in [this guide](http://www.avinashtech.com/internet/alternative-global-domain-system/), which I recommend, except Clear Cloud, which terminated in early 2012, then those servers) are consulted, and for most sites that you have not yet visited, this is where your answer would be found.
+
+If necessary, the queries can go all of the way up to the DNS root servers, a set of 13 servers virtualized over dozens of computers around the world, which hold the authoritative domain name information for every website on the Internet that has registered a domain name (not all do); this very rarely happens, and when it does, your ISP or alternative DNS provider quickly caches the result and uses it for a long time.
+
+**As soon as an answer is returned the search ends,** and the program attempts to connect to the IP address returned; this fact, along with the ability to edit the HOSTS file and (for advanced users) the router's DNS functionality at will, allows you to keep certain domain names from being accessed, simply by putting bogus information in to be retrieved!
+
+Most people use 127.0.0.1 (the local computer), but this is undesirable if also running a Web server on your computer, so I recommend 0.0.0.0, a known invalid IP address; even this one results in a little lag as the computer keeps attempting to establish a connection, so for more advanced users willing to fiddle with their router and install pixelserv, I recommend the IP address that it will run on, something in the local address space like 192.168.0.254 or 192.168.1.254 (depending on the configuration of your router).
+
+# Structure of the HOSTS File #
+The HOSTS File is a plain-text file with no extension, called "hosts" and placed in a standard location in your filesystem (for DOS-based Windows, it's C:\WINDOWS\; for NT-based Windows including XP and later, C:\WINDOWS\System32\drivers\etc\; for most Unix-like systems including OS X, /etc/; for Android, /system/etc/).
+
+Each line that is blank is ignored, as is each line starting with # (a comment); all other lines must start with one IP address followed by a set of domain names, all separated by whitespace (like tabs or spaces), and then all of the domain names on that line will be mapped to the IP address beginning the line.
+
+All domain names must be fully-qualified; wildcards are forbidden, and including a domain will not affect any subdomain, so for example both facebook.com and www.facebook.com would need to be included if blocking Facebook.
+
+This lack of granularity is the major weakness of using the HOSTS file, so domains are added judiciously; only the exact domain names are blocked, and all content on them is blocked without exception. In particular, this is useless for blocking advertising served directly from a legitimate site, or blocking malware placed on such a site after it has been somehow compromised, but it still has its uses in walling off large "bad neighborhoods" of the Web, and it works for any program at all that uses the Internet, even bots looking for their command-and-control servers at the head of their botnets.
+
+# Recommendations #
+Unfortunately, many pre-compiled HOSTS files are riddled with false positives, including such ordinary websites as Megaupload and Sourceforge; the only good ones I have found are the immunizations from SpyBot and SpywareBlaster and [Peter Lowe's Ad Servers](http://pgl.yoyo.org/as/serverlist.php?hostformat=hosts&showintro=0&useip=0.0.0.0&mimetype=plaintext), although I am evaluating the [ZeuS tracker](http://www.abuse.ch/zeustracker/blocklist.php?download=hostfile).
+
+If not using the Advanced Recommendations, get [my HOSTS file](https://jansal.googlecode.com/svn/trunk/adblock/hosts) combining all of these sources and a few more entries I thought good to add, along with entries obtained from [Malware Domains](http://malwaredomains.com/files/BOOT) via [this script](https://jansal.googlecode.com/svn/trunk/adblock/maldomain.js); you can update it up to once per week, but you will probably be okay even if you wait more than a month, because these aren't updated extensively whenever they are updated. I try to update it every Wednesday after Patrick Michael Kolla, lead developer of SpyBot, releases the Immunization updates.
+
+If using the Advanced Recommendations, get [this smaller HOSTS file](https://jansal.googlecode.com/svn/trunk/adblock/hostslt) with just the SpyBot immunizations and entries from [Malware Domains](http://www.malwaredomains.com/), optimized for the smallest filesize while using the 192.168.0.254 IP address for pixelserv; unfortunately there are too many entries to fit all of _them_ into some routers' internal storage (including my own).
+
+In both cases, re-name the file to "hosts" with no file extension; be sure to set your operating system to show all file extensions first.
+
+You may have noticed that there are many domain names on each line, while if you just ran Spybot directly, there would be only one domain name per line; for this I thank the Optimization feature of [HostsMan](http://www.abelhadigital.com/hostsman), a program sadly available only for Windows. If you run Windows and want to be updated with the latest and greatest ad- and malware-blocking HOSTS file, download and install Hosts Man, add either of the previously-mentioned HOSTS files as your source, call it Jansal Hosts, and use only that update source, and definitely NOT MVPs or hpHosts, because they are too riddled with FalsePositives; in this case, be sure not to use SpyBot to immunize your HOSTS file, because it will already have all of the latest immunizations. Also, try to have it start up when Windows does, but if you're using Vista or later, look at the PeerBlock article for inspiration on getting around that; basically, set up a Scheduled Task that runs Hosts Man once a day, probably in the early morning when you won't be awake, with the command-line parameter -s (silent).
+
+If not using Windows, you may be able to whip up a cron job or just update manually; be sure that if you are using Linux, you look at the top lines of your current HOSTS file and ensure that they are added to the new one, or else you may temporarily lose your ability to access the Internet.
+
+Do not use an excessively large HOSTS file; the one I am providing is between 280KB and 400KB, depending on which version you use, and that is already pushing the limits. Be sure to disable the DNS Client service in Windows XP or earlier (run ipconfig /flushdns first) if you use either file, or else it will slow down your system re-parsing the large HOSTS file whenever any DNS information is updated and the DNS Cache needs to be re-built; this does mean that your ISP will take a little more of a hit, but it's not that much.
+
+## Advanced Recommendations ##
+First, you should be aware that the first step in this process, if not done carefully, can result in a non-functioning router. I bear no responsibility if you break your router, and precisely because of the danger, this is one thing I have never done with any of the people whose computers I have set up, only with my own setup.
+
+With that said, ensure that your router is compatible with [DD-WRT](http://www.dd-wrt.com/site/index), and then install the latest version that the Wiki says will work, even if it is an SVN; the later, the better, and if it isn't compatible, you can't make use of these Recommendations directly, although you may be able to think of something else that works, like if [Tomato](http://www.paultow.com/2009/06/10/how-to-block-ads-with-a-router/) can be installed.
+
+Basically follow [the steps laid out by Aviad Raviv](http://sysadmingeek.com/articles/how-to-remove-advertisements-with-pixelserv-on-dd-wrt/) (use [his earlier directions](http://hotfortech.wikispaces.com/How+to+remove+advertisements+with+pixelserv+on+DD-WRT) for insight into how it all works), but instead of his files, use my special version of
+[the ZIP archive](https://jansal.googlecode.com/svn/trunk/adblock/AntiAdsDD-WRT.zip), which adds the sites that I had manually added into my HOSTS file and removes Ustream and Live Jasmin, packs pixelserv with UPX for smaller file-size (but use pixelserv\_AR71xx if using an Atheros-based router, and rename it pixelserv), uses my [list based on](http://jansal.googlecode.com/svn/trunk/adblock/hostslt.txt) the SpywareBlaster Restricted Sites immunizations, because MVPs has too many FalsePositives, and uses a slightly different variant of [Peter Lowe's Ad Servers](http://pgl.yoyo.org/as/serverlist.php?hostformat=dnsmasq&showintro=0&useip=0.0.0.0&mimetype=plaintext) with a smaller initial filesize; if your router has enough Flash memory left over after installing DD-WRT, change disable-ads.sh to point to [another version](http://jansal.googlecode.com/svn/trunk/adblock/hostsc) of my compiled HOSTS file containing everything in the full version that was not shifted to personal-ads-list.conf.
+
+If your router uses IP addresses starting with 192.168.0.xxx instead of 192.168.1.xxx, replace all occurrences of "192.168.1." with "192.168.0."
+
+Advantages of this method include that it works with all devices connected to that router, that queries to the blocked domains quickly return a 1x1 blank GIF image rather than taking a while to determine that the site is unreachable, and that both base domains and subdomains in Peter Lowe's Ad Servers and the personal ads list are automatically blocked, without needing to list, say, every single sub-domain of Doubleclick.
+
+If you use these Recommendations, and you have set up Hosts Man to download the lighter version of my HOSTS file, be sure to automatically change the blocking IP address from 192.168.1.254 to whatever you end up using; additionally, consider using [this Proxy Auto-Configuration file](http://pgl.yoyo.org/as/serverlist.php?hostformat=proxyautoconfig&useip=192.168.1.254&mimetype=plaintext) with [this advice](http://www.ericphelps.com/security/pac.htm), making sure to use [this Registry file](http://www.schooner.com/~loverso/no-ads/IE-auto-proxy-cache.reg) if on Windows.
+You may also consider using [Peter Lowe's Ad Servers](http://pgl.yoyo.org/as/#other) in conjunction with the DNS Cache on Windows via [this Registry file](http://pgl.yoyo.org/as/serverlist.php?hostformat=win32registry&showintro=0&mimetype=plaintext).
+
+# Not Recommended #
+As with many other means of PassiveSecurity that make use of blocking lists, if I didn't list it, don't use it; in particular, MVPs, hpHosts, Malware Domain List, and [BSDGeek\_Jake's list](http://adblock.mahakala.is/) are too large and full of FalsePositives.

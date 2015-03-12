@@ -1,0 +1,14 @@
+# An Innovation in Internet Explorer 9 #
+Part of the original plan for InternetExplorer 8 was a means for downloading lists of trackers to block, similar to filter subscriptions in AdBlock Plus for Firefox; advertisers balked because they correctly figured that this could be used much like the UrlFilter file in OperaBrowser to block other types of content, and the proposal was neutered and squirrelled away as InPrivate Filtering, to be overshadowed by the more famous InPrivate Browsing mode, popularly known as "Porn Mode" for its lack of persistent traces left behind in places like History and Temporary Internet Files.
+
+It turned out that even though InPrivate Filtering did not support subscriptions, it was possible to imperfectly repurpose lists originally created for things like AdBlock Plus and AdblockIni (from SRWare Iron) as InPrivate Filtering lists for manual import, and they became increasingly popular about a year after the release of InternetExplorer 8, with just a minor bump as the means to automatically enable InPrivate Filtering was changed with the IE9 Beta.
+
+However, Tracking Protection Lists (TPLs) were revived for the Release Candidate of IE9, utterly replacing InPrivate Filtering and no longer allowing manual importing of filter lists; rather, Microsoft has provided [a source for TPLs](http://ie.microsoft.com/testdrive/Browser/TrackingProtectionLists/Default.html), including the venerable Easy Privacy.
+
+In fact, not only Easy Privacy, but all subscriptions related to Easy List, were automatically converted to TPLs via [this Perl script](https://hg.adblockplus.org/easylist/file/tip/generate_subscriptions.pl), but only Easy Privacy was widely advertised; unfortunately subscribing to a TPL requires clicking on a particular javascript: link and cannot be done via loading that link into the address bar or manually inserting the base URL of the subscription, and these links, as a security measure, are difficult to post successfully into Web forums or other areas where live links may be posted.
+
+# Recommendations #
+Go to the official Microsoft site and subscribe to only to Abine and the more permissive Privacy Choice lists (the harsher one has FalsePositives with AOL and Yahoo! Mail), and then go to [this site](http://dayngo.com/static/filter.html) to subscribe to the combination of Easy List and Easy Privacy, for some serious ad-blocking, along with any desired regional lists, or (better idea) [Fanboy's site](http://fanboy.co.nz/ie.html) to subscribe to his general, tracking, and regional blocklists; if it turns out to be possible to directly place the relevant javascript: links in here, I will use them instead.
+
+# Not Recommended #
+The second Privacy Choice list has many FalsePositives, and the TRUSTe list is notable for false _negatives_, letting many an ad-server through.

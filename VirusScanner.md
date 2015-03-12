@@ -1,0 +1,30 @@
+# The Last Line of Defense #
+Most of this wiki is about blocking common vectors of malware propagation, but you should have exactly one resident virus-scanner running on your computer (multiple scanners can interfere with each other), even if you are not using Windows; you should get one that also scans for other forms of malware, like rootkits, keyloggers, trojans, worms, and bots, and most of them do.
+
+A good virus-scanner will employ fingerprinting to keep from re-scanning the same unchanged file over and over, but even so, it will run every time a file is downloaded to your computer, so the fewer files downloaded (like from third-party ad-servers), the less work the scanner needs to do; also keeping common sources of malware at bay will reduce the frequency of alerts from your virus-scanner.
+
+# Recommended Scanners #
+## Windows ##
+for XP and later, [Microsoft Security Essentials](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=e1605e70-9649-4a87-8532-33d813687a7f); for Windows 98 and ME, [ClamWin](http://www.clamwin.com/) with the [ClamSentinel](http://clamsentinel.sourceforge.net/) automator; for Windows 2000 or pirated copies of later versions, [avast!](http://www.avast.com/free-antivirus-download)
+
+All three are relatively unintrusive, with [good detection rates and low false-positive rates](https://docs.google.com/viewer?url=http://av-comparatives.org/images/stories/test/ondret/avc_od_aug2010.pdf), and all are free of the annoying browser toolbars common to offerings by AVG, Mcafee, or Symantec; unfortunately there is no updated virus-scanner for Windows 95 or NT 4 or earlier versions.
+
+## OS X ##
+for Tiger and later, [Sophos](http://www.sophos.com/products/free-tools/free-mac-anti-virus/); for earlier versions, [ClamXav](http://www.clamxav.com/)
+
+Despite what you may be thinking, [malware does exist for the Mac](https://www.youtube.com/watch?v=RTeSYmQS820), and it's a growing problem; most cyber-criminals target Windows (especially older versions and unpatched systems) because it is less secure by default and it is much more widely-used, but [the Mac is not immune](https://www.youtube.com/watch?v=6Kbxg9QvkuA).
+
+Of special concern is the fact that until recently, the Java Runtime Environment (JRE) packaged with OS X by Apple was still on version 1.5, even though 1.6 has been available for 4 years as of this writing (since late 2006); even now only the latest version of OS X, Snow Leopard, can take advantage of the numerous security patches made to this notoriously insecure runtime environment, and much Mac malware is cross-platform, making use of vulnerabilities in PlugIns like Java that have already been patched (except on the Mac).
+
+Also, keep in mind that if you exchange files with Windows users, you may want to ensure that you don't send infected files to them, and most virus-scanners for the Mac will look for malware that attacks any platform.
+
+(As a historical note, OS 9 and earlier Classic Mac OS versions did have a few notable infections spreading, and Norton even released a popular anti-virus program for it, but that OS is obsolete now and the Unix-based OS X is more difficult to exploit.)
+
+## Linux ##
+Use Clamav with the Clamtk GUI, and scan your home directory on a regular basis; much as with the Mac, you can be subject to [cross-platform malware](https://www.youtube.com/watch?v=I7RcKVwoNME), and you should be courteous to Windows users by scanning files for malware before sending them off. Clamav was actually created to scan mail servers, but it has been re-purposed for home use and ported to Windows and OS X, as mentioned earlier.
+
+## Mobile ##
+Yes, malware attacks smartphones too: Wherever you have a device that can run untested code from the outside, you can get a malware infection; for Blackberry, Android, and Windows Mobile, a free option is [Lookout Mobile Security](https://www.mylookout.com/), while for the iPhone there is no good program, but then again all known infections have occurred on devices "jailbroken" to allow the installation of unauthorized software, and because iOS updates may render jailbroken devices inoperable, jailbreaking is not recommended in any case.
+
+# Not Recommended #
+You should not pay for anti-virus software or use a bulky suite that bogs down your computer or installs annoying toolbars (often for scanning links or auto-filling forms to defeat keyloggers...but not formgrabbers); notorious offenders include Symantec (whose Norton offerings are the worst), Mcafee, and AVG. Also if a virus-scanner has a high rate of FalsePositives, as Kingsoft infamously does, stay away! You don't want to deal with the [problems](https://en.wikipedia.org/wiki/Antivirus_software#Problems_caused_by_false_positives) that result when your virus-scanner deletes or quarantines a vital system file and renders your computer unable to boot, as [AVG](http://www.theregister.co.uk/2010/12/02/avg_auto_immune_update/), [BitDefender](http://www.theregister.co.uk/2010/03/22/bitdefender_dodgy_update/), and [McAfee](http://www.engadget.com/2010/04/21/mcafee-update--shutting-down-xp-machines/) recently did; in the past, these problems popped up with [ESET](http://www.theregister.co.uk/2009/03/10/eset_false_alarm/) (vendor of NOD32), [Trend Micro](http://www.theregister.co.uk/2008/09/08/trend_security_false_alarm/), [CA](http://www.theregister.co.uk/2009/07/10/ca_rogue_av_update/), [Symantec](http://www.theregister.co.uk/2007/07/17/norton_nasa_false_positive/), [Kaspersky](http://www.channelregister.co.uk/2007/12/20/kaspersky_false_alarm/), and even [ClamAV, IBM Proventia, F-Prot](http://www.theregister.co.uk/2009/04/07/security_scanner_bugs/), [Microsoft](http://www.theregister.co.uk/2006/11/14/onecare_gmail_false_alert/) (with its old One Care program), [Sophos](http://www.theregister.co.uk/2006/02/23/sophos_false_positive/), and [ALWIL](http://www.theregister.co.uk/2009/12/07/avast_false_positive/), the vendor of avast!

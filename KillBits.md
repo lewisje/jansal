@@ -1,0 +1,8 @@
+# Killing Off Bad ActiveX Controls #
+Along with its ActiveX technology in the late '90s, Microsoft introduced the concept of killbits, which keep misbehaving ActiveX controls from working anymore; eventually Microsoft started distributing its own, and so did independent entities like Patrick Michael Kolla (developer of SpyBot) and Brightfort (maker of SpywareBlaster).
+
+# Recommendations #
+Follow the recommendations in the InternetExplorer article: Killbits apply to no other browser and no operating system except Windows.
+
+# Not Recommended #
+Unless you are sufficiently paranoid, do not disable ActiveX controls that users find useful, like Flash or Java; however, if you do want to disable Flash, SpywareBlaster offers an easy way to do so in its Tools menu.
