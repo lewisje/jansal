@@ -10,7 +10,7 @@ Don't use any of the built-in lists; instead add these lists from Bluetack, all 
   * [Malicious Hackers](http://list.iblocklist.com/?list=bt_dshield&fileformat=p2p&archiveformat=gz)
   * [Forum Spammers](http://list.iblocklist.com/?list=ficutxiwawokxlcyoeye&fileformat=p2p&archiveformat=gz)
   * [Spammers](http://list.iblocklist.com/?list=bt_hijacked&fileformat=p2p&archiveformat=gz)
-Also consider the [ZeuS tracker](http://list.iblocklist.com/?list=ynkdjqsjyfmilsgbogqf&fileformat=p2p&archiveformat=gz) and a list I extracted from the [Spybot immunizations](http://jansal.googlecode.com/svn/trunk/adblock/spybot.txt.gz).
+Also consider the [ZeuS tracker](http://list.iblocklist.com/?list=ynkdjqsjyfmilsgbogqf&fileformat=p2p&archiveformat=gz) and a list I extracted from the [Spybot immunizations](http://lewisje.github.io/spybot.txt.gz).
 
 Next, go to the Settings menu, choose to log nothing, and turn off notifications.
 
