@@ -27,4 +27,4 @@ convert('hosts.txt', 'hostslt.txt', '0.0.0.0', 24);
 convert('hostsu', 'hostsc', '0.0.0.0', 24);
 convert('hostsbkp', 'hosts', '0.0.0.0', 9);
 convert('hostsbk', 'hostslt', '192.168.1.254', 9);
-convert('hostsig', 'hostslrg', '0.0.0.0', 24);
+convert('hostsbig', 'hostslrg', '0.0.0.0', 24);
