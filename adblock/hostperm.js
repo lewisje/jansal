@@ -1,7 +1,7 @@
 var http = new ActiveXObject('Microsoft.XMLHTTP'),
   fso = new ActiveXObject('Scripting.FileSystemObject'),
   f = fso.CreateTextFile(file = 'hostperm.txt', true);
-http.open('GET', website = 'https://pgl.yoyo.org/as/serverlist.php?hostformat=hostperm.1&showintro=0&mimetype=plaintext&skip[]=adf.ly&skip[]=boldchat.com', false);
+http.open('GET', website = 'https://pgl.yoyo.org/as/serverlist.php?hostformat=hostperm.1&showintro=0&mimetype=plaintext&skip[]=adf.ly&skip[]=boldchat.com&skip[]=wpnrtnmrewunrtok.xyz', false);
 http.setRequestHeader('Accept', 'text/html');
 http.send();
 f.Write(http.responseText.replace(/host\timage\t2\t/g, ''));

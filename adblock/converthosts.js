@@ -1,5 +1,5 @@
 var fso = new ActiveXObject('Scripting.FileSystemObject');
-function convert(inf, out, bh, b6, lim){
+function convert(inf, out, bh, b6, lim) {
   'use strict';
   var l = [], s, f, i, t;
   if (!fso.FileExists(inf)) return;
@@ -13,6 +13,10 @@ function convert(inf, out, bh, b6, lim){
   f.WriteLine('ff02::2 ip6-allrouters');
   f.WriteLine('255.255.255.255 broadcasthost');
   f.WriteLine('46.246.119.139 status.block.aid');
+  f.WriteLine('104.31.76.4 eroshare.com');
+  f.WriteLine('104.31.77.4 eroshare.com');
+  f.WriteLine('2400:cb00:2048:1::681f:4c04 eroshare.com');
+  f.WriteLine('2400:cb00:2048:1::681f:4d04 eroshare.com');
   while (!s.AtEndOfStream) {
     l.length = 0;
     for (i = lim; i-- && !s.AtEndOfStream;) l.push(s.readLine().replace('0.0.0.0 ' , ''));
@@ -28,3 +32,4 @@ convert('hostsu', 'hostsc', '0.0.0.0', '::', 24);
 convert('hostsbkp', 'hosts', '0.0.0.0', '::', 9);
 convert('hostsbk', 'hostslt', '192.168.1.254', '::', 9);
 convert('hostsbig', 'hostslrg', '0.0.0.0', '::', 24);
+convert('hosts.windows', 'hostsult', '0.0.0.0', '::', 9);
