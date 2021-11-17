@@ -4,7 +4,7 @@ fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-255.255.255.255 broadcasthost
+255.255.255.255 broadcasthost wpad.
 46.246.119.139 status.block.aid
 104.31.76.4 eroshare.com
 104.31.77.4 eroshare.com
