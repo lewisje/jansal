@@ -1,6 +1,6 @@
 127.0.0.1 localhost
 ::1 localhost
-255.255.255.255 broadcasthost
+255.255.255.255 broadcasthost wpad.
 0.0.0.0 invalid
 0.0.0.0 2.gns.co.il
 0.0.0.0 209-34-83-73.ood.opsource.net
