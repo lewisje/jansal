@@ -1,6 +1,6 @@
 var http = new ActiveXObject('Microsoft.XMLHTTP'), fso = new ActiveXObject('Scripting.FileSystemObject'),
   v = new ActiveXObject('Shell.Application'), f = fso.CreateTextFile(file = 'C:\\WINDOWS\\System32\\DRIVERS\\etc\\hosts', true);
-http.open('GET', website = 'https://gitcdn.xyz/repo/lewisje/jansal/master/adblock/hosts', false);
+http.open('GET', website = 'https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts', false);
 http.setRequestHeader('Accept', 'text/plain');
 http.send();
 f.Write(http.responseText.replace(/0.0.0.0 /g,'127.0.0.2 '));
