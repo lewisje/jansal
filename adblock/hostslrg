@@ -6,6 +6,7 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 255.255.255.255 broadcasthost
 46.246.119.139 status.block.aid
+45.88.200.206 sneed.today www.sneed.today
 104.31.76.4 eroshare.com
 104.31.77.4 eroshare.com
 2400:cb00:2048:1::681f:4c04 eroshare.com

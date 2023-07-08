@@ -13,6 +13,7 @@ function convert(inf, out, bh, b6, lim) {
   f.WriteLine('ff02::2 ip6-allrouters');
   f.WriteLine('255.255.255.255 broadcasthost');
   f.WriteLine('46.246.119.139 status.block.aid');
+  f.WriteLine('45.88.200.206 sneed.today www.sneed.today');
   f.WriteLine('104.31.76.4 eroshare.com');
   f.WriteLine('104.31.77.4 eroshare.com');
   f.WriteLine('2400:cb00:2048:1::681f:4c04 eroshare.com');
